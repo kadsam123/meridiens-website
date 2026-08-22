@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Meridiens</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-main">MERIDIENS</span>
+        <span class="logo-sub">Global BI & Applied AI</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="products.html" class="nav-link">Products</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- INTRO HERO -->
+  <section class="about-hero">
+    <div class="container">
+      <span class="section-subtitle">Get In Touch</span>
+      <h1 style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">Connect With Us</h1>
+      <p style="color: var(--color-text-muted); max-width: 700px; font-size: 1.1rem;">
+        Let's discuss your enterprise data architecture, system optimization plans, or dynamic corridor modeling requirements.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- Info Column -->
+        <div class="contact-info-panel">
+          <h2 style="font-size: 1.8rem; margin-bottom: var(--spacing-xs);">Inquiry Information</h2>
+          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: var(--spacing-md);">
+            To help our engineering team review your requirements, please describe your existing system tech stack and optimization goals.
+          </p>
+
+          <div class="contact-detail-card">
+            <h3 class="contact-detail-title">Direct Email</h3>
+            <p class="contact-detail-value">
+              <a href="mailto:info@meridiens.co">info@meridiens.co</a>
+            </p>
+          </div>
+
+          <div class="contact-detail-card">
+            <h3 class="contact-detail-title">Headquarters</h3>
+            <p class="contact-detail-value" style="color: var(--color-text-muted);">
+              Montreal, Quebec, Canada
+            </p>
+          </div>
+
+          <div class="contact-detail-card">
+            <h3 class="contact-detail-title">Federal Registration</h3>
+            <p class="contact-detail-value" style="color: var(--color-text-muted); font-size: 0.9rem;">
+              Canada Business Corporations Act (CBCA)<br>
+              Corporate ID: 18138711
+            </p>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="contact-form-container">
+          <!-- Formspree Integration Form
+               To activate, replace "your_formspree_id" in the action attribute with your actual Formspree endpoint ID -->
+          <form id="contact-form" action="https://formspree.io/f/your_formspree_id" method="POST" enctype="multipart/form-data">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name *</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Jane Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="company" class="form-label">Company Name</label>
+                <input type="text" id="company" name="company" class="form-control" placeholder="Global Logistics Co.">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address *</label>
+              <input type="email" id="email" name="_replyto" class="form-control" placeholder="jane@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Inquiry Details *</label>
+              <textarea id="message" name="message" class="form-control" placeholder="Describe your data systems, dynamic corridor requirements, or automation goals..." required></textarea>
+            </div>
+
+            <!-- Optional File Upload for briefs, data specifications, or logs -->
+            <div class="form-group">
+              <label class="form-label">Attach System Log / Brief (Optional)</label>
+              <div class="file-upload-wrapper">
+                <input type="file" id="file-upload" name="attachment" class="file-upload-input">
+                <div class="file-upload-btn">
+                  <span>📎</span> Choose file...
+                </div>
+              </div>
+              <div id="file-name-display" class="file-name-display"></div>
+            </div>
+
+            <!-- Anti-Spam Honeypot Field -->
+            <input type="text" name="_gotcha" style="display:none">
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-sm);">Submit Inquiry</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-main">MERIDIENS</span>
+            <span class="logo-sub">Global BI & Applied AI</span>
+          </a>
+          <p class="footer-about">
+            Public-facing brand of <strong>18138711 CANADA INC.</strong>, a federally registered Canadian consulting company in Montreal delivering data engineering and AI automation solutions.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Global Reach</h4>
+          <div class="footer-corridors">
+            <p><strong>Dynamic Corridors:</strong> On-demand corridor routing, customs auditing, and supply chain mapping across any trade route worldwide.</p>
+            <p style="margin-top: 10px;">HQ: Montreal, QC, Canada &bull; <a href="mailto:info@meridiens.co" style="color: var(--color-accent);">info@meridiens.co</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 18138711 CANADA INC. All rights reserved. Operating under brand Meridiens.</p>
+        <p>Federal Registration Number: 18138711 (Canada)</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

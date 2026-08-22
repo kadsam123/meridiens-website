@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Meridiens</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-main">MERIDIENS</span>
+        <span class="logo-sub">Global BI & Applied AI</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link active">Services</a></li>
+        <li><a href="products.html" class="nav-link">Products</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- INTRO HERO -->
+  <section class="about-hero">
+    <div class="container">
+      <span class="section-subtitle">Our Capabilities</span>
+      <h1 style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">Consulting Services</h1>
+      <p style="color: var(--color-text-muted); max-width: 700px; font-size: 1.1rem;">
+        From fundamental Business Intelligence (BI) data warehouses to advanced autonomous multi-agent pipelines, we build solutions that deliver operational margin.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES CARD SECTION -->
+  <section class="section">
+    <div class="container">
+      <div id="services-container" class="cards-grid">
+        <!-- Dynamically loaded via js/main.js & js/data.js -->
+        
+        <!-- Fallback loader / Spinner -->
+        <div style="grid-column: 1 / -1; text-align: center; padding: var(--spacing-xl); color: var(--color-text-muted);">
+          <p>Loading services...</p>
+        </div>
+      </div>
+
+      <!-- No-JavaScript Fallback (SEO and accessibility friendly) -->
+      <noscript>
+        <div class="cards-grid" style="margin-top: var(--spacing-md);">
+          <!-- Service 1 -->
+          <div class="service-card" id="business-intelligence">
+            <h3 class="service-title">Business Intelligence (BI)</h3>
+            <p class="service-desc">Translating complex operational data into clear historical trends and predictive forecasting.</p>
+            <p class="service-desc" style="font-size: 0.88rem; color: var(--color-text-muted); opacity: 0.9; margin-top: -5px; border-left: 2px solid var(--color-border); padding-left: 10px;">
+              We design robust data warehouses, build automated ETL pipelines, and construct structured reports that turn raw transaction logs into clear, actionable executive guidance.
+            </p>
+            <div class="service-footer">
+              <span class="service-tag">Business Intelligence</span>
+              <a href="contact.html?subject=Inquiry: Business Intelligence" class="service-link">Inquire &rarr;</a>
+            </div>
+          </div>
+          <!-- Service 2 -->
+          <div class="service-card" id="applied-ai-consulting">
+            <h3 class="service-title">Applied AI Consulting</h3>
+            <p class="service-desc">Implementing state-of-the-art machine learning models directly into client software stacks.</p>
+            <p class="service-desc" style="font-size: 0.88rem; color: var(--color-text-muted); opacity: 0.9; margin-top: -5px; border-left: 2px solid var(--color-border); padding-left: 10px;">
+              From fine-tuning custom LLMs for proprietary knowledge bases to deploying specialized computer vision systems, we guide your development team through model selection and deployment.
+            </p>
+            <div class="service-footer">
+              <span class="service-tag">Artificial Intelligence</span>
+              <a href="contact.html?subject=Inquiry: Applied AI Consulting" class="service-link">Inquire &rarr;</a>
+            </div>
+          </div>
+          <!-- Service 3 -->
+          <div class="service-card" id="export-intelligence">
+            <h3 class="service-title">Export Intelligence (AtlasCorr AI)</h3>
+            <p class="service-desc">AI-driven market intelligence identifying high-potential export corridors globally.</p>
+            <p class="service-desc" style="font-size: 0.88rem; color: var(--color-text-muted); opacity: 0.9; margin-top: -5px; border-left: 2px solid var(--color-border); padding-left: 10px;">
+              Utilize our proprietary global trade models to automatically map shipping routes, regulatory demands, customs rules, and buyer behavior, translating complex logistics into clear target markets.
+            </p>
+            <div class="service-footer">
+              <span class="service-tag">Trade Intelligence</span>
+              <a href="contact.html?subject=Inquiry: Export Intelligence" class="service-link">Inquire &rarr;</a>
+            </div>
+          </div>
+          <!-- Service 4 -->
+          <div class="service-card" id="digital-transformation">
+            <h3 class="service-title">SME & Enterprise Digital Transformation</h3>
+            <p class="service-desc">Modernizing legacy data systems and manual operational procedures with custom cloud networks.</p>
+            <p class="service-desc" style="font-size: 0.88rem; color: var(--color-text-muted); opacity: 0.9; margin-top: -5px; border-left: 2px solid var(--color-border); padding-left: 10px;">
+              We audit your current organizational processes, eliminate spreadsheet-reliant bottlenecks, and deploy lightweight web portals and API systems that keep your teams aligned.
+            </p>
+            <div class="service-footer">
+              <span class="service-tag">Transformation</span>
+              <a href="contact.html?subject=Inquiry: SME & Enterprise Digital Transformation" class="service-link">Inquire &rarr;</a>
+            </div>
+          </div>
+          <!-- Service 5 -->
+          <div class="service-card" id="ai-dashboards">
+            <h3 class="service-title">AI-Powered Dashboards</h3>
+            <p class="service-desc">Custom operational control centers presenting real-time business telemetry and KPIs.</p>
+            <p class="service-desc" style="font-size: 0.88rem; color: var(--color-text-muted); opacity: 0.9; margin-top: -5px; border-left: 2px solid var(--color-border); padding-left: 10px;">
+              Stop toggling between ten tabs. We build consolidated single-page dashboards that aggregate data from all your APIs, displaying real-time corridor metrics and operations.
+            </p>
+            <div class="service-footer">
+              <span class="service-tag">Analytics / UX</span>
+              <a href="contact.html?subject=Inquiry: AI-Powered Dashboards" class="service-link">Inquire &rarr;</a>
+            </div>
+          </div>
+          <!-- Service 6 -->
+          <div class="service-card" id="market-corridor-analysis">
+            <h3 class="service-title">Market & Corridor Analysis</h3>
+            <p class="service-desc">Dynamic, on-demand evaluation of target trade pathways and custom regulatory blocks worldwide.</p>
+            <p class="service-desc" style="font-size: 0.88rem; color: var(--color-text-muted); opacity: 0.9; margin-top: -5px; border-left: 2px solid var(--color-border); padding-left: 10px;">
+              Unlike regional agencies, our quantitative tools analyze any global corridor on-demand. We evaluate tariff lists, shipping lane congestion, and local legal frameworks.
+            </p>
+            <div class="service-footer">
+              <span class="service-tag">Corridor Analysis</span>
+              <a href="contact.html?subject=Inquiry: Market & Corridor Analysis" class="service-link">Inquire &rarr;</a>
+            </div>
+          </div>
+          <!-- Service 7 -->
+          <div class="service-card" id="agentic-automation">
+            <h3 class="service-title">Agentic Automation (Circle + Gemini)</h3>
+            <p class="service-desc">Autonomous software agent networks handling complex document audits and operations.</p>
+            <p class="service-desc" style="font-size: 0.88rem; color: var(--color-text-muted); opacity: 0.9; margin-top: -5px; border-left: 2px solid var(--color-border); padding-left: 10px;">
+              Deploy multi-agent systems designed to verify invoices, parse custom declarations, translate legal contracts, and handle data synchronization across systems without manual input.
+            </p>
+            <div class="service-footer">
+              <span class="service-tag">Automation</span>
+              <a href="contact.html?subject=Inquiry: Agentic Automation" class="service-link">Inquire &rarr;</a>
+            </div>
+          </div>
+          <!-- Service 8 -->
+          <div class="service-card" id="enterprise-optimization">
+            <h3 class="service-title">Enterprise Optimization Systems</h3>
+            <p class="service-desc">Auditing organizational information flows to eliminate overhead and unlock margin gains.</p>
+            <p class="service-desc" style="font-size: 0.88rem; color: var(--color-text-muted); opacity: 0.9; margin-top: -5px; border-left: 2px solid var(--color-border); padding-left: 10px;">
+              Apply operations research and mathematical optimization to resource allocation, inventory levels, scheduling configurations, and dispatch lines, creating massive cost reductions.
+            </p>
+            <div class="service-footer">
+              <span class="service-tag">Optimization</span>
+              <a href="contact.html?subject=Inquiry: Enterprise Optimization Systems" class="service-link">Inquire &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </noscript>
+
+    </div>
+  </section>
+
+  <!-- QUICK ACTION CTA -->
+  <section class="section-alt">
+    <div class="container text-center">
+      <h2 style="font-size: 1.8rem; margin-bottom: var(--spacing-sm);">Need a Customized Operational Strategy?</h2>
+      <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto var(--spacing-md) auto;">
+        We kick off our consulting pipeline with a structured operational data audit to map current system dependencies and target optimizations.
+      </p>
+      <a href="contact.html" class="btn btn-primary">Schedule a System Audit</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-main">MERIDIENS</span>
+            <span class="logo-sub">Global BI & Applied AI</span>
+          </a>
+          <p class="footer-about">
+            Public-facing brand of <strong>18138711 CANADA INC.</strong>, a federally registered Canadian consulting company in Montreal delivering data engineering and AI automation solutions.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Global Reach</h4>
+          <div class="footer-corridors">
+            <p><strong>Dynamic Corridors:</strong> On-demand corridor routing, customs auditing, and supply chain mapping across any trade route worldwide.</p>
+            <p style="margin-top: 10px;">HQ: Montreal, QC, Canada &bull; <a href="mailto:info@meridiens.co" style="color: var(--color-accent);">info@meridiens.co</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 18138711 CANADA INC. All rights reserved. Operating under brand Meridiens.</p>
+        <p>Federal Registration Number: 18138711 (Canada)</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
