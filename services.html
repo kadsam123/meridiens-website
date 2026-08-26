@@ -21,11 +21,11 @@
         <span></span>
       </button>
       <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="services.html" class="nav-link active">Services</a></li>
-        <li><a href="products.html" class="nav-link">Products</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="index.html" class="nav-link" data-i18n="nav-home">Home</a></li>
+        <li><a href="services.html" class="nav-link active" data-i18n="nav-services">Services</a></li>
+        <li><a href="products.html" class="nav-link" data-i18n="nav-products">Products</a></li>
+        <li><a href="about.html" class="nav-link" data-i18n="nav-about">About</a></li>
+        <li><a href="contact.html" class="nav-link" data-i18n="nav-contact">Contact</a></li>
       </ul>
     </div>
   </header>
@@ -33,10 +33,10 @@
   <!-- INTRO HERO -->
   <section class="about-hero">
     <div class="container">
-      <span class="section-subtitle">Our Capabilities</span>
-      <h1 style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">Consulting Services</h1>
-      <p style="color: var(--color-text-muted); max-width: 700px; font-size: 1.1rem;">
-        From fundamental Business Intelligence (BI) data warehouses to advanced autonomous multi-agent pipelines, we build solutions that deliver operational margin.
+      <span class="section-subtitle" data-i18n="nav-services">Our Services</span>
+      <h1 style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);" data-i18n="services-title">Applied AI & Data Engineering Core Offerings</h1>
+      <p style="color: var(--color-text-muted); max-width: 700px; font-size: 1.1rem;" data-i18n="services-description">
+        We deliver functional software, clean database designs, and automated agent pipelines connected directly to your enterprise infrastructure.
       </p>
     </div>
   </section>
@@ -178,35 +178,36 @@
             <span class="logo-main">MERIDIENS</span>
             <span class="logo-sub">Global BI & Applied AI</span>
           </a>
-          <p class="footer-about">
-            Public-facing brand of <strong>18138711 CANADA INC.</strong>, a federally registered Canadian consulting company in Montreal delivering data engineering and AI automation solutions.
+          <p class="footer-about" data-i18n="footer-about">
+            Public-facing brand of <strong>18138711 CANADA INC.</strong>, a federally registered consulting company delivering data engineering and AI automation solutions globally.
           </p>
         </div>
         <div>
-          <h4 class="footer-title">Navigation</h4>
+          <h4 class="footer-title" data-i18n="footer-nav-title">Navigation</h4>
           <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+            <li><a href="services.html" data-i18n="nav-services">Services</a></li>
+            <li><a href="products.html" data-i18n="nav-products">Products</a></li>
+            <li><a href="about.html" data-i18n="nav-about">About Us</a></li>
+            <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="footer-title">Global Reach</h4>
+          <h4 class="footer-title" data-i18n="footer-reach-title">Global Reach</h4>
           <div class="footer-corridors">
-            <p><strong>Dynamic Corridors:</strong> On-demand corridor routing, customs auditing, and supply chain mapping across any trade route worldwide.</p>
-            <p style="margin-top: 10px;">HQ: Montreal, QC, Canada &bull; <a href="mailto:info@meridiens.co" style="color: var(--color-accent);">info@meridiens.co</a></p>
+            <p data-i18n="footer-reach-desc"><strong>Dynamic Corridors:</strong> On-demand corridor routing, customs auditing, and supply chain mapping across any trade route worldwide.</p>
+            <p style="margin-top: 10px;"><span data-i18n="footer-contact-lbl">Contact: </span><a href="mailto:info@meridiens.co" style="color: var(--color-accent);">info@meridiens.co</a></p>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 18138711 CANADA INC. All rights reserved. Operating under brand Meridiens.</p>
-        <p>Federal Registration Number: 18138711 (Canada)</p>
+        <p data-i18n="footer-copy">&copy; 2026 18138711 CANADA INC. All rights reserved. Operating under brand Meridiens.</p>
+        <p data-i18n="footer-reg">Federal Registration Number: 18138711 (Canada)</p>
       </div>
     </div>
   </footer>
 
+  <script src="js/translations.js"></script>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>

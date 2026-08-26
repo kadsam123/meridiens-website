@@ -21,11 +21,11 @@
         <span></span>
       </button>
       <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="products.html" class="nav-link active">Products</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="index.html" class="nav-link" data-i18n="nav-home">Home</a></li>
+        <li><a href="services.html" class="nav-link" data-i18n="nav-services">Services</a></li>
+        <li><a href="products.html" class="nav-link active" data-i18n="nav-products">Products</a></li>
+        <li><a href="about.html" class="nav-link" data-i18n="nav-about">About</a></li>
+        <li><a href="contact.html" class="nav-link" data-i18n="nav-contact">Contact</a></li>
       </ul>
     </div>
   </header>
@@ -33,10 +33,10 @@
   <!-- INTRO HERO -->
   <section class="about-hero">
     <div class="container">
-      <span class="section-subtitle">Our Work</span>
-      <h1 style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">Products & Milestones</h1>
-      <p style="color: var(--color-text-muted); max-width: 700px; font-size: 1.1rem;">
-        Explore the database structures, automation engines, archives, and custom solutions we have deployed to accelerate export corridors.
+      <span class="section-subtitle" data-i18n="products-subtitle">Product Portfolio</span>
+      <h1 style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);" data-i18n="products-title">Functional Software Milestones</h1>
+      <p style="color: var(--color-text-muted); max-width: 700px; font-size: 1.1rem;" data-i18n="products-description">
+        Operational platforms built by our engineers to solve complex business intelligence, multi-agent automation, and regulatory challenges.
       </p>
     </div>
   </section>
@@ -93,38 +93,38 @@
             </div>
           </div>
           <!-- Product 3 -->
-          <div class="product-card" id="algerian-rock-archive">
+          <div class="product-card" id="epistemic-engine">
             <div class="product-thumbnail-placeholder">
-              <span class="product-icon-brand">ARA</span>
+              <span class="product-icon-brand">EE</span>
             </div>
             <div class="product-info">
-              <span class="service-tag" style="align-self: flex-start; margin-bottom: var(--spacing-xs);">Database / Archival</span>
-              <h3 class="product-title">Algerian Rock Archive</h3>
-              <p class="product-desc">A digital high-fidelity archival search tool classifying and surveying geological and core-sample assets.</p>
+              <span class="service-tag" style="align-self: flex-start; margin-bottom: var(--spacing-xs);">Applied AI / RAG</span>
+              <h3 class="product-title">Epistemic Engine</h3>
+              <p class="product-desc">A cognitive semantic search and entity extraction engine mapping complex corporate knowledge bases.</p>
               <p class="product-desc" style="font-size: 0.85rem; color: var(--color-text-muted); border-top: 1px dashed var(--color-border); padding-top: var(--spacing-xs);">
-                Built for natural resource and research groups, this archive digitizes and analyzes core-sample catalog data with semantic search, permitting rapid cross-referencing of geological formations in Algeria.
+                Epistemic Engine uses agentic RAG and natural language pipelines to crawl, parse, and structure unstructured enterprise documentation into interactive, queryable semantic knowledge graphs.
               </p>
               <div class="product-actions">
-                <a href="products.html#algerian-rock-archive" class="btn btn-secondary">Learn Details</a>
-                <a href="https://demo.meridiens.co/rockarchive" target="_blank" rel="noopener" class="btn btn-primary">Try Demo</a>
+                <a href="products.html#epistemic-engine" class="btn btn-secondary">Learn Details</a>
+                <a href="https://demo.meridiens.co/epistemic" target="_blank" rel="noopener" class="btn btn-primary">Try Demo</a>
               </div>
             </div>
           </div>
           <!-- Product 4 -->
-          <div class="product-card" id="kenadsa-gardens-oasis">
+          <div class="product-card" id="ifc-compliance">
             <div class="product-thumbnail-placeholder">
-              <span class="product-icon-brand">KGO</span>
+              <span class="product-icon-brand">ICA</span>
             </div>
             <div class="product-info">
-              <span class="service-tag" style="align-self: flex-start; margin-bottom: var(--spacing-xs);">Vision / Agritech</span>
-              <h3 class="product-title">Kenadsa Gardens Oasis</h3>
-              <p class="product-desc">A vision project mapping automated smart irrigation and microclimate optimizations for dryland oases.</p>
+              <span class="service-tag" style="align-self: flex-start; margin-bottom: var(--spacing-xs);">Automation / Vision</span>
+              <h3 class="product-title">IFC Compliance Auditor</h3>
+              <p class="product-desc">An autonomous inspector verifying construction BIM models against regulatory codes.</p>
               <p class="product-desc" style="font-size: 0.85rem; color: var(--color-text-muted); border-top: 1px dashed var(--color-border); padding-top: var(--spacing-xs);">
-                Kenadsa Gardens represents our digital twin modeling project for dryland agriculture, simulating water-flow efficiency, soil nutrition levels, and solar load to optimize crops in arid regional microclimates.
+                Currently under development, the IFC Compliance Auditor maps geometric and metadata properties of Industry Foundation Classes (IFC) files, cross-referencing them against regional municipal building regulations.
               </p>
               <div class="product-actions">
-                <a href="products.html#kenadsa-gardens-oasis" class="btn btn-secondary">Learn Details</a>
-                <a href="about.html#vision" target="_blank" rel="noopener" class="btn btn-primary">Try Demo</a>
+                <a href="products.html#ifc-compliance" class="btn btn-secondary">Learn Details</a>
+                <a href="products.html#ifc-compliance" target="_blank" rel="noopener" class="btn btn-primary">Under Dev</a>
               </div>
             </div>
           </div>
@@ -138,12 +138,12 @@
   <section class="section-alt">
     <div class="container">
       <div style="background-color: var(--color-bg-card); padding: var(--spacing-lg); border-radius: var(--border-radius); border: 1px solid var(--color-border); max-width: 800px; margin: 0 auto;">
-        <span class="section-subtitle" style="font-size: 0.8rem; margin-bottom: 0;">Access Controls</span>
-        <h3 style="font-size: 1.3rem; margin-bottom: var(--spacing-xs); font-weight: 700;">Demo Environment Notice</h3>
-        <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: var(--spacing-sm);">
+        <span class="section-subtitle" style="font-size: 0.8rem; margin-bottom: 0;" data-i18n="access-title">Access Controls</span>
+        <h3 style="font-size: 1.3rem; margin-bottom: var(--spacing-xs); font-weight: 700;" data-i18n="demo-notice-title">Demo Environment Notice</h3>
+        <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: var(--spacing-sm);" data-i18n="demo-notice-desc">
           Active prototypes and operational dashboards are hosted in sandboxed subdomains (`demo.meridiens.co`) and are encrypted. Authorized enterprise client access requires credentials distributed during project onboarding.
         </p>
-        <p style="color: var(--color-text-muted); font-size: 0.9rem;">
+        <p style="color: var(--color-text-muted); font-size: 0.9rem;" data-i18n="demo-notice-request">
           To request test credentials or arrange a live walk-through with our systems engineers, please submit a query via our <a href="contact.html">Contact Page</a>.
         </p>
       </div>
@@ -159,35 +159,36 @@
             <span class="logo-main">MERIDIENS</span>
             <span class="logo-sub">Global BI & Applied AI</span>
           </a>
-          <p class="footer-about">
-            Public-facing brand of <strong>18138711 CANADA INC.</strong>, a federally registered Canadian consulting company in Montreal delivering data engineering and AI automation solutions.
+          <p class="footer-about" data-i18n="footer-about">
+            Public-facing brand of <strong>18138711 CANADA INC.</strong>, a federally registered consulting company delivering data engineering and AI automation solutions globally.
           </p>
         </div>
         <div>
-          <h4 class="footer-title">Navigation</h4>
+          <h4 class="footer-title" data-i18n="footer-nav-title">Navigation</h4>
           <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+            <li><a href="services.html" data-i18n="nav-services">Services</a></li>
+            <li><a href="products.html" data-i18n="nav-products">Products</a></li>
+            <li><a href="about.html" data-i18n="nav-about">About Us</a></li>
+            <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="footer-title">Global Reach</h4>
+          <h4 class="footer-title" data-i18n="footer-reach-title">Global Reach</h4>
           <div class="footer-corridors">
-            <p><strong>Dynamic Corridors:</strong> On-demand corridor routing, customs auditing, and supply chain mapping across any trade route worldwide.</p>
-            <p style="margin-top: 10px;">HQ: Montreal, QC, Canada &bull; <a href="mailto:info@meridiens.co" style="color: var(--color-accent);">info@meridiens.co</a></p>
+            <p data-i18n="footer-reach-desc"><strong>Dynamic Corridors:</strong> On-demand corridor routing, customs auditing, and supply chain mapping across any trade route worldwide.</p>
+            <p style="margin-top: 10px;"><span data-i18n="footer-contact-lbl">Contact: </span><a href="mailto:info@meridiens.co" style="color: var(--color-accent);">info@meridiens.co</a></p>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 18138711 CANADA INC. All rights reserved. Operating under brand Meridiens.</p>
-        <p>Federal Registration Number: 18138711 (Canada)</p>
+        <p data-i18n="footer-copy">&copy; 2026 18138711 CANADA INC. All rights reserved. Operating under brand Meridiens.</p>
+        <p data-i18n="footer-reg">Federal Registration Number: 18138711 (Canada)</p>
       </div>
     </div>
   </footer>
 
+  <script src="js/translations.js"></script>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>

@@ -8,6 +8,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
   initActiveLink();
+  initI18n();
   initDynamicRendering();
   initContactForm();
 });
@@ -182,3 +183,72 @@ function initContactForm() {
     });
   }
 }
+
+/**
+ * Initialize Translation Systems
+ */
+function initI18n() {
+  const navMenu = document.querySelector('.nav-menu');
+  if (navMenu && !document.getElementById('lang-toggle-item')) {
+    const li = document.createElement('li');
+    li.id = 'lang-toggle-item';
+    li.className = 'lang-switcher-item';
+    
+    let currentLang = localStorage.getItem('meridiens_lang') || 'en';
+    let buttonText = currentLang === 'en' ? 'FR' : 'EN';
+    
+    li.innerHTML = `
+      <button onclick="toggleLang()" class="lang-btn" id="lang-toggle-btn" aria-label="Switch Language">
+        ${buttonText}
+      </button>
+    `;
+    navMenu.appendChild(li);
+  }
+  applyTranslations();
+}
+
+/**
+ * Dynamic translator replacing text contents
+ */
+function applyTranslations() {
+  const lang = localStorage.getItem('meridiens_lang') || 'en';
+  document.documentElement.setAttribute('lang', lang);
+  
+  if (typeof TRANSLATIONS === 'undefined') return;
+
+  const elements = document.querySelectorAll('[data-i18n]');
+  elements.forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (TRANSLATIONS[lang] && TRANSLATIONS[lang][key]) {
+      const translation = TRANSLATIONS[lang][key];
+      if (translation.includes('<') && translation.includes('>')) {
+        el.innerHTML = translation;
+      } else {
+        el.textContent = translation;
+      }
+    }
+  });
+
+  const placeholders = document.querySelectorAll('[data-i18n-placeholder]');
+  placeholders.forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (TRANSLATIONS[lang] && TRANSLATIONS[lang][key]) {
+      el.setAttribute('placeholder', TRANSLATIONS[lang][key]);
+    }
+  });
+}
+
+/**
+ * Toggle Language Handler
+ */
+window.toggleLang = function() {
+  let currentLang = localStorage.getItem('meridiens_lang') || 'en';
+  let nextLang = currentLang === 'en' ? 'fr' : 'en';
+  localStorage.setItem('meridiens_lang', nextLang);
+  
+  const btn = document.getElementById('lang-toggle-btn');
+  if (btn) btn.textContent = nextLang === 'en' ? 'FR' : 'EN';
+  
+  applyTranslations();
+  initDynamicRendering();
+};
