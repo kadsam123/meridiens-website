@@ -44,6 +44,27 @@
   <!-- PRODUCTS GRID SECTION -->
   <section class="section">
     <div class="container">
+      
+      <!-- Simulator Control Panel -->
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; margin-bottom: 20px;">
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin: 0;" data-i18n="suite-title">Meridiens Suite</h2>
+        <div class="region-selector-container"></div>
+      </div>
+
+      <div class="pricing-summary-bar">
+        <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+          <div>
+            <span style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; color: var(--color-primary); display: block;" data-i18n="session-total-cost">Total Simulated Billing:</span>
+            <span class="session-cost-display" style="font-size: 1.4rem; font-weight: 700; color: var(--color-text); line-height: 1.2;">$0.00 USD</span>
+          </div>
+          <div style="border-left: 1px solid var(--color-border); padding-left: 20px; max-width: 450px;">
+            <span style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; color: var(--color-text-muted); display: block;" data-i18n="pricing-title">Adaptive Billing</span>
+            <span style="font-size: 0.8rem; color: var(--color-text-muted);" data-i18n="pricing-description">Simulation of Pay-Per-Result usage billing based on the active region's tier profile.</span>
+          </div>
+        </div>
+        <button onclick="CT.usage.clearSession()" class="btn-simulator-reset" data-i18n="btn-clear-session">Reset Simulator Session</button>
+      </div>
+
       <div id="products-container" class="cards-grid">
         <!-- Dynamically loaded via js/main.js & js/data.js -->
         
@@ -55,79 +76,9 @@
 
       <!-- No-JavaScript Fallback (SEO and accessibility friendly) -->
       <noscript>
-        <div class="cards-grid" style="margin-top: var(--spacing-md);">
-          <!-- Product 1 -->
-          <div class="product-card" id="atlascorr-ai">
-            <div class="product-thumbnail-placeholder">
-              <span class="product-icon-brand">AC</span>
-            </div>
-            <div class="product-info">
-              <span class="service-tag" style="align-self: flex-start; margin-bottom: var(--spacing-xs);">Trade Intelligence</span>
-              <h3 class="product-title">AtlasCorr AI</h3>
-              <p class="product-desc">A global trade-corridor intelligence engine mapping enterprise export opportunities on-demand.</p>
-              <p class="product-desc" style="font-size: 0.85rem; color: var(--color-text-muted); border-top: 1px dashed var(--color-border); padding-top: var(--spacing-xs);">
-                AtlasCorr AI aggregates global market signals, tariff policies, and logistical data to guide organizations through expanding their footprint, offering automated feasibility reports instantly.
-              </p>
-              <div class="product-actions">
-                <a href="products.html#atlascorr-ai" class="btn btn-secondary">Learn Details</a>
-                <a href="https://demo.meridiens.co/atlascorr" target="_blank" rel="noopener" class="btn btn-primary">Try Demo</a>
-              </div>
-            </div>
-          </div>
-          <!-- Product 2 -->
-          <div class="product-card" id="meridian-flow">
-            <div class="product-thumbnail-placeholder">
-              <span class="product-icon-brand">MF</span>
-            </div>
-            <div class="product-info">
-              <span class="service-tag" style="align-self: flex-start; margin-bottom: var(--spacing-xs);">Automation</span>
-              <h3 class="product-title">Meridian Flow</h3>
-              <p class="product-desc">An agentic pipeline builder that automates cross-border documentation and compliance audits.</p>
-              <p class="product-desc" style="font-size: 0.85rem; color: var(--color-text-muted); border-top: 1px dashed var(--color-border); padding-top: var(--spacing-xs);">
-                Meridian Flow coordinates autonomous agent networks to read, translate, check compliance of, and route trade documents, drastically reducing manual processing time for compliance reviews.
-              </p>
-              <div class="product-actions">
-                <a href="products.html#meridian-flow" class="btn btn-secondary">Learn Details</a>
-                <a href="https://demo.meridiens.co/meridianflow" target="_blank" rel="noopener" class="btn btn-primary">Try Demo</a>
-              </div>
-            </div>
-          </div>
-          <!-- Product 3 -->
-          <div class="product-card" id="epistemic-engine">
-            <div class="product-thumbnail-placeholder">
-              <span class="product-icon-brand">EE</span>
-            </div>
-            <div class="product-info">
-              <span class="service-tag" style="align-self: flex-start; margin-bottom: var(--spacing-xs);">Applied AI / RAG</span>
-              <h3 class="product-title">Epistemic Engine</h3>
-              <p class="product-desc">A cognitive semantic search and entity extraction engine mapping complex corporate knowledge bases.</p>
-              <p class="product-desc" style="font-size: 0.85rem; color: var(--color-text-muted); border-top: 1px dashed var(--color-border); padding-top: var(--spacing-xs);">
-                Epistemic Engine uses agentic RAG and natural language pipelines to crawl, parse, and structure unstructured enterprise documentation into interactive, queryable semantic knowledge graphs.
-              </p>
-              <div class="product-actions">
-                <a href="products.html#epistemic-engine" class="btn btn-secondary">Learn Details</a>
-                <a href="https://demo.meridiens.co/epistemic" target="_blank" rel="noopener" class="btn btn-primary">Try Demo</a>
-              </div>
-            </div>
-          </div>
-          <!-- Product 4 -->
-          <div class="product-card" id="ifc-compliance">
-            <div class="product-thumbnail-placeholder">
-              <span class="product-icon-brand">ICA</span>
-            </div>
-            <div class="product-info">
-              <span class="service-tag" style="align-self: flex-start; margin-bottom: var(--spacing-xs);">Automation / Vision</span>
-              <h3 class="product-title">IFC Compliance Auditor</h3>
-              <p class="product-desc">An autonomous inspector verifying construction BIM models against regulatory codes.</p>
-              <p class="product-desc" style="font-size: 0.85rem; color: var(--color-text-muted); border-top: 1px dashed var(--color-border); padding-top: var(--spacing-xs);">
-                Currently under development, the IFC Compliance Auditor maps geometric and metadata properties of Industry Foundation Classes (IFC) files, cross-referencing them against regional municipal building regulations.
-              </p>
-              <div class="product-actions">
-                <a href="products.html#ifc-compliance" class="btn btn-secondary">Learn Details</a>
-                <a href="products.html#ifc-compliance" target="_blank" rel="noopener" class="btn btn-primary">Under Dev</a>
-              </div>
-            </div>
-          </div>
+        <div style="background-color: var(--color-bg-card); padding: var(--spacing-lg); border: 1px solid var(--color-border); border-radius: var(--border-radius); text-align: center; margin-top: var(--spacing-md);">
+          <p style="font-size: 1.1rem; font-weight: 600;">JavaScript Required</p>
+          <p style="color: var(--color-text-muted); font-size: 0.95rem;">The Meridiens Suite interactive simulator requires JavaScript to run classification, routing, and pricing models dynamically.</p>
         </div>
       </noscript>
 
@@ -190,6 +141,8 @@
 
   <script src="js/translations.js"></script>
   <script src="js/data.js"></script>
+  <script src="js/region.js"></script>
+  <script src="js/usage.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -115,25 +115,68 @@ function initDynamicRendering() {
       card.className = 'product-card';
       card.id = product.id;
       
+      const lang = localStorage.getItem('meridiens_lang') || 'en';
+      const testBtnText = lang === 'fr' ? "Tester l'App" : "Test App";
+      const runBtnText = lang === 'fr' ? "Générer le Résultat" : "Generate Result";
+      const terminalIdle = lang === 'fr' ? "Console inactive. Cliquez sur 'Tester l'App' ou 'Générer le Résultat' pour démarrer." : 'Terminal idle. Click "Test App" or "Generate Result" to begin.';
+      const runsText = lang === 'fr' ? "Exécutions :" : "Runs:";
+      const rateText = lang === 'fr' ? " / résultat" : " / result";
+      
+      // Fetch initial price and count
+      const price = window.CT.region ? window.CT.region.getAppPrice(product.id) : 0.00;
+      const count = window.CT.usage ? window.CT.usage.getUsage(product.id) : 0;
+      
+      // Render presets badges
+      const presetsHtml = product.region_presets.map(preset => 
+        `<span style="font-size: 0.72rem; font-weight: 600; background-color: rgba(255, 255, 255, 0.05); border: 1px solid var(--color-border); color: var(--color-text-muted); padding: 2px 6px; border-radius: 3px; display: inline-block; margin-right: 4px; margin-bottom: 4px;">${preset}</span>`
+      ).join('');
+
       card.innerHTML = `
-        <div class="product-thumbnail-placeholder">
-          <span class="product-icon-brand">${product.brandText}</span>
-        </div>
-        <div class="product-info">
-          <span class="service-tag" style="align-self: flex-start; margin-bottom: var(--spacing-xs);">${product.tag}</span>
-          <h3 class="product-title">${product.title}</h3>
-          <p class="product-desc">${product.description}</p>
-          <p class="product-desc" style="font-size: 0.85rem; color: var(--color-text-muted); border-top: 1px dashed var(--color-border); padding-top: var(--spacing-xs);">
+        <div class="product-info" style="display: flex; flex-direction: column; height: 100%;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: var(--spacing-xs);">
+            <span class="service-tag" style="margin-bottom: 0;">${product.tag}</span>
+            <span class="price-tag-${product.id}" style="font-size: 0.8rem; font-weight: 700; color: var(--color-primary); background-color: rgba(56, 189, 248, 0.08); padding: 2px 6px; border-radius: 4px;">$${price.toFixed(2)} USD${rateText}</span>
+          </div>
+          <h3 class="product-title" style="margin-bottom: 6px;">${product.title}</h3>
+          <p class="product-desc" style="margin-bottom: 8px;">${product.description}</p>
+          <p class="product-desc" style="font-size: 0.84rem; color: var(--color-text-muted); border-top: 1px dashed var(--color-border); padding-top: var(--spacing-xs); margin-bottom: var(--spacing-sm); flex-grow: 1;">
             ${product.details}
           </p>
-          <div class="product-actions">
-            <a href="${product.pageUrl}" class="btn btn-secondary">Learn Details</a>
-            <a href="${product.demoUrl}" target="_blank" rel="noopener" class="btn btn-primary">Try Demo</a>
+          
+          <div class="app-presets-wrap" style="margin-bottom: var(--spacing-sm);">
+            <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; color: var(--color-text-muted); margin-bottom: 4px;">Presets / Scope:</div>
+            <div style="display: flex; flex-wrap: wrap;">${presetsHtml}</div>
+          </div>
+
+          <!-- Sandbox Terminal Simulator -->
+          <div class="terminal-container" id="terminal-${product.id}">
+            <div class="terminal-header">
+              <span>Terminal Sandbox</span>
+              <span>
+                <span>${runsText}</span>
+                <span class="usage-count-${product.id}" style="font-weight: 700;">${count}</span>
+              </span>
+            </div>
+            <div class="terminal-body"><span style="color: var(--color-text-muted);">${terminalIdle}</span></div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: 8px; margin-top: var(--spacing-sm);">
+            <button onclick="CT.usage.testApp('${product.id}')" class="btn btn-secondary" style="font-size: 0.78rem; padding: 8px 10px; justify-content: center; font-weight: 600;">
+              ${testBtnText}
+            </button>
+            <button onclick="CT.usage.generateResult('${product.id}')" class="btn btn-primary" style="font-size: 0.78rem; padding: 8px 10px; justify-content: center; font-weight: 600;">
+              ${runBtnText}
+            </button>
           </div>
         </div>
       `;
       productsContainer.appendChild(card);
     });
+
+    // Make sure values are synced
+    if (window.CT.usage) {
+      window.CT.usage.updateBillingUI();
+    }
   }
 }
 
