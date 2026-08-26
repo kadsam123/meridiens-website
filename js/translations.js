@@ -28,6 +28,21 @@ const TRANSLATIONS = {
     "tag-opt": "Optimization",
     "tag-rag": "Applied AI / RAG",
 
+    // Meridiens Suite Simulation Keys
+    "suite-title": "Meridiens Suite",
+    "suite-subtitle": "Intelligent Micro-Apps for SMEs",
+    "suite-description": "A collection of region-adaptable, agent-powered tools designed to streamline compliance, classification, search, and logistics operations.",
+    "region-selector-label": "Active Region:",
+    "pricing-title": "Adaptive Billing",
+    "pricing-description": "Simulation of Pay-Per-Result usage billing based on the active region's tier profile.",
+    "per-result-label": "per run",
+    "usage-counter-label": "Runs generated this session:",
+    "btn-run": "Generate Result",
+    "btn-test": "Test App",
+    "terminal-idle": "Terminal idle. Click 'Test App' or 'Generate Result' to begin.",
+    "session-total-cost": "Total Simulated Billing:",
+    "btn-clear-session": "Reset Simulator Session",
+
     // Footer
     "footer-about": "Public-facing brand of <strong>18138711 CANADA INC.</strong>, a federally registered consulting company delivering data engineering and AI automation solutions globally.",
     "footer-reach-title": "Global Reach",
@@ -65,6 +80,8 @@ const TRANSLATIONS = {
     "services-subtitle": "Our Services",
     "services-title": "Applied AI & Data Engineering Core Offerings",
     "services-description": "We deliver functional software, clean database designs, and automated agent pipelines connected directly to your enterprise infrastructure.",
+    "services-cta-title": "Need a Customized Operational Strategy?",
+    "services-cta-desc": "Our consulting services are powered by the <strong>Meridiens Suite</strong>—our custom micro-app collection that automates classification, auditing, and routing. We customize and connect these agents directly to your system stack.",
     
     // Products Page
     "products-subtitle": "Product Portfolio",
@@ -78,6 +95,8 @@ const TRANSLATIONS = {
     // About Page
     "about-subtitle": "Corporate Profile & Standing",
     "about-desc": "Meridiens is the public-facing brand for <strong>18138711 CANADA INC.</strong>, a federally registered corporation providing data engineering and AI automation solutions. We serve enterprises of all sizes globally, developing custom systems to translate raw information into clear margin improvements.",
+    "about-philosophy-title": "Global Architecture, Local Personalization",
+    "about-philosophy-desc": "At Meridiens, we believe that software should be lightweight but deeply specialized. The <strong>Meridiens Suite</strong> is engineered as a collection of modular, autonomous micro-apps. Each app is powered under-the-hood by specialized LLM agents and custom compliance parsers, dynamically adapting its pricing, currencies, and customs logic to the region in which you operate.",
     "founder-title": "Founder Background",
     "founder-p1": "The company was established by a senior systems engineer with an extensive background in <strong>Business Intelligence (BI)</strong>, <strong>export logistics modeling</strong>, and <strong>agentic automation</strong>.",
     "founder-p2": "Recognizing the structural overhead faced by growing companies during global expansion, the founder designed Meridiens' core software tools to automate compliance checks and render export analytics instantly.",
@@ -116,7 +135,8 @@ const TRANSLATIONS = {
     "form-file": "Attach Technical Specs (PDF, JSON, Max 10MB)",
     "btn-submit": "Send Inquiry",
     "form-placeholder-msg": "Please outline your data pipeline challenges, target compliance corridors, or required agent flows...",
-    "form-placeholder-subject": "e.g. Pipeline Audit, Agent Integration, BI Dashboard"
+    "form-placeholder-subject": "e.g. Pipeline Audit, Agent Integration, BI Dashboard",
+    "contact-enterprise-note": "For enterprise integrations or high-volume usage of the Meridiens Suite APIs, contact us for volume-based custom pricing."
   },
   fr: {
     // Navigation
@@ -143,6 +163,21 @@ const TRANSLATIONS = {
     "tag-opt": "Optimisation",
     "tag-rag": "IA Appliquée / RAG",
 
+    // Meridiens Suite Simulation Keys
+    "suite-title": "Suite Meridiens",
+    "suite-subtitle": "Micro-Applications Intelligentes pour PME",
+    "suite-description": "Une collection d'outils adaptés aux régions et propulsés par agents, conçus pour simplifier la conformité, la classification, la recherche et la logistique.",
+    "region-selector-label": "Région Active :",
+    "pricing-title": "Tarification Adaptative",
+    "pricing-description": "Simulation de facturation à l'utilisation par résultat basée sur le profil de niveau de la région active.",
+    "per-result-label": "par exécution",
+    "usage-counter-label": "Exécutions de la session :",
+    "btn-run": "Générer le Résultat",
+    "btn-test": "Tester l'App",
+    "terminal-idle": "Console inactive. Cliquez sur 'Tester l'App' ou 'Générer le Résultat' pour démarrer.",
+    "session-total-cost": "Facturation simulée totale :",
+    "btn-clear-session": "Réinitialiser la Session",
+
     // Footer
     "footer-about": "Marque grand public de <strong>18138711 CANADA INC.</strong>, société de conseil canadienne enregistrée au niveau fédéral fournissant des solutions d'ingénierie de données et d'automatisation d'IA à l'échelle mondiale.",
     "footer-reach-title": "Portée Mondiale",
@@ -161,7 +196,7 @@ const TRANSLATIONS = {
     "mission-p1": "Meridiens (constituée en société fédérale sous le nom de 18138711 CANADA INC.) est un cabinet de conseil mondial en IA appliquée et ingénierie de données. Nous sommes spécialisés dans la transformation des actifs de données brutes en levier opérationnel structuré. Nos équipes conçoivent les pipelines analytiques et les systèmes d'agents autonomes qui aident les entreprises à optimiser l'allocation des ressources, à naviguer dans les routes logistiques mondiales et à se développer.",
     "mission-p2": "Au lieu de frontières régionales, nous opérons de manière dynamique et globale. Nos modèles sont conçus pour évaluer et intégrer les voies commerciales, les régimes douaniers et les structures opérationnelles partout dans le monde, sur demande.",
     "phil-title": "Philosophie de Conseil",
-    "phil-desc": "\"We believe in functional engineering over boilerplate slides. Our consulting deliverables are production-ready codebases, clean interactive dashboards, and optimized databases that provide clear, immediate margins.\"",
+    "phil-desc": "\"Nous croyons en l'ingénierie fonctionnelle plutôt qu'aux présentations types. Nos livrables sont des bases de code prêtes pour la production, des tableaux de bord interactifs épurés et des bases de données optimisées qui offrent des gains immédiats.\"",
     "phil-btn": "Notre Architecture",
     "pillars-subtitle": "Nos Compétences",
     "pillars-title": "Piliers Opérationnels Clés",
@@ -180,6 +215,8 @@ const TRANSLATIONS = {
     "services-subtitle": "Nos Services",
     "services-title": "Offres Clés en IA Appliquée & Ingénierie de Données",
     "services-description": "Nous fournissons des logiciels fonctionnels, des conceptions de bases de données propres et des pipelines d'agents automatisés connectés directement à votre infrastructure.",
+    "services-cta-title": "Besoin d'une Stratégie Opérationnelle Personnalisée ?",
+    "services-cta-desc": "Nos services de conseil sont propulsés par la <strong>Suite Meridiens</strong>—notre collection de micro-applications qui automatise la classification, l'audit et le routage. Nous personnalisons et connectons ces agents directement à votre infrastructure.",
 
     // Products Page
     "products-subtitle": "Portefeuille de Produits",
@@ -193,6 +230,8 @@ const TRANSLATIONS = {
     // About Page
     "about-subtitle": "Profil de l'entreprise & Statut",
     "about-desc": "Meridiens est la marque grand public de <strong>18138711 CANADA INC.</strong>, une société enregistrée au niveau fédéral fournissant des solutions d'ingénierie de données et d'automatisation de l'IA. Nous servons des entreprises de toutes tailles à l'échelle mondiale, en développant des systèmes personnalisés pour transformer les informations brutes en améliorations de marge nettes.",
+    "about-philosophy-title": "Architecture Globale, Personnalisation Locale",
+    "about-philosophy-desc": "Chez Meridiens, nous pensons que les logiciels doivent être légers mais hautement spécialisés. La <strong>Suite Meridiens</strong> est conçue comme un ensemble de micro-applications autonomes et modulaires. Chaque application est propulsée en arrière-plan par des agents LLM spécialisés et des analyseurs de conformité personnalisés, adaptant dynamiquement ses prix, devises et logiques douanières à la région dans laquelle vous opérez.",
     "founder-title": "Parcours du Fondateur",
     "founder-p1": "L'entreprise a été créée par un ingénieur système senior possédant une vaste expérience en <strong>Business Intelligence (BI)</strong>, <strong>modélisation logistique d'exportation</strong> et <strong>automatisation d'agents</strong>.",
     "founder-p2": "Conscient des coûts structurels auxquels font face les entreprises en pleine expansion, le fondateur a conçu les outils logiciels de Meridiens pour automatiser les contrôles de conformité et générer instantanément des analyses d'exportation.",
@@ -207,7 +246,7 @@ const TRANSLATIONS = {
     "corridor-3-desc": "Intégration de la traduction de documents multilingues et d'autorisations bancaires transfrontalières automatisées.",
     "lab-subtitle": "Recherche & Développement Active",
     "lab-title": "Laboratoires Sandbox d'IA Appliquée",
-    "lab-p1": "We continuously research, prototype, and build advanced algorithmic solutions. Our internal labs focus on agentic architectures, dynamic knowledge graphs, and cross-border billing networks.",
+    "lab-p1": "Nous recherchons, prototypons et construisons continuellement des solutions algorithmiques avancées. Nos laboratoires internes se concentrent sur les architectures d'agents, les graphes de connaissances dynamiques et les réseaux de facturation transfrontaliers.",
     "lab-p2": "Actuellement en développement, nos frameworks d'orchestration multi-agents sont conçus pour automatiser l'analyse de documents juridiques complexes, les audits réglementaires municipaux et la synthèse de pipelines structurés. Nous construisons des sandboxes fonctionnelles qui permettent à nos clients de tester des modèles bruts sur leurs propres données avant le déploiement.",
     "lab-meta": "Domaines d'étude : RAG, Automatisation d'Agents, Audit de plans BIM",
     "btn-lab-collab": "Demander l'Accès Sandbox",
@@ -215,7 +254,7 @@ const TRANSLATIONS = {
     // Contact Page
     "contact-subtitle": "Entrer en contact",
     "contact-title": "Connectez-vous avec nos Ingénieurs",
-    "contact-description": "We are ready to design, deploy, and scale your data infrastructure and agent systems. Reach out to schedule a technical discovery call.",
+    "contact-description": "Nous sommes prêts à concevoir, déployer et faire évoluer vos infrastructures de données et vos systèmes d'agents. Contactez-nous pour planifier un appel de découverte technique.",
     "inquiry-title": "Informations sur la Demande",
     "inquiry-desc": "Pour aider notre équipe d'ingénieurs à examiner vos besoins, veuillez décrire votre pile technique actuelle et vos objectifs d'optimisation.",
     "lbl-email": "E-mail Direct",
@@ -231,6 +270,7 @@ const TRANSLATIONS = {
     "form-file": "Joindre les spécifications techniques (PDF, JSON, Max 10Mo)",
     "btn-submit": "Envoyer la Demande",
     "form-placeholder-msg": "Veuillez décrire vos défis de pipeline de données, vos corridors de conformité cibles ou les flux d'agents requis...",
-    "form-placeholder-subject": "Ex. Audit de pipeline, Intégration d'agents, Tableau de bord BI"
+    "form-placeholder-subject": "Ex. Audit de pipeline, Intégration d'agents, Tableau de bord BI",
+    "contact-enterprise-note": "Pour des intégrations d'entreprise ou des volumes élevés d'utilisation des API de la Suite Meridiens, contactez-nous pour des tarifs de gros."
   }
 };

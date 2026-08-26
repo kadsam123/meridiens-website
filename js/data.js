@@ -1,16 +1,63 @@
 /**
  * Meridiens - Services and Products Data Configuration (Multilingual EN/FR)
- * 
- * Defines services and products data in both English and French.
- * Exposes dynamic window.SERVICES_DATA and window.PRODUCTS_DATA getters.
+ * Defines micro-apps, regions, and adaptive usage pricing tiers.
  */
+
+const PRICING_TIERS = {
+  tier1: {
+    "hs-code-helper": 0.15,
+    "tariff-checker": 0.25,
+    "corridor-finder": 0.40,
+    "market-signal-lens": 0.50,
+    "document-parser": 0.60,
+    "logistics-lane-analyzer": 0.75,
+    "feasibility-builder": 1.00
+  },
+  tier2: {
+    "hs-code-helper": 0.05,
+    "tariff-checker": 0.10,
+    "corridor-finder": 0.20,
+    "market-signal-lens": 0.25,
+    "document-parser": 0.30,
+    "logistics-lane-analyzer": 0.40,
+    "feasibility-builder": 0.50
+  },
+  tier3: {
+    "hs-code-helper": 0.02,
+    "tariff-checker": 0.04,
+    "corridor-finder": 0.07,
+    "market-signal-lens": 0.09,
+    "document-parser": 0.12,
+    "logistics-lane-analyzer": 0.14,
+    "feasibility-builder": 0.19
+  }
+};
+
+const REGIONS = [
+  { code: "CA", name_en: "Canada", name_fr: "Canada", tier: "tier1" },
+  { code: "US", name_en: "United States", name_fr: "États-Unis", tier: "tier1" },
+  { code: "EU", name_en: "European Union", name_fr: "Union Européenne", tier: "tier1" },
+  { code: "AE", name_en: "United Arab Emirates", name_fr: "Émirats Arabes Unis", tier: "tier1" },
+  { code: "GB", name_en: "United Kingdom", name_fr: "Royaume-Uni", tier: "tier1" },
+  
+  { code: "DZ", name_en: "Algeria", name_fr: "Algérie", tier: "tier2" },
+  { code: "MA", name_en: "Morocco", name_fr: "Maroc", tier: "tier2" },
+  { code: "TN", name_en: "Tunisia", name_fr: "Tunisie", tier: "tier2" },
+  { code: "SN", name_en: "Senegal", name_fr: "Sénégal", tier: "tier2" },
+  { code: "TR", name_en: "Turkey", name_fr: "Turquie", tier: "tier2" },
+  { code: "BR", name_en: "Brazil", name_fr: "Brésil", tier: "tier2" },
+
+  { code: "WA", name_en: "West Africa (Emerging)", name_fr: "Afrique de l'Ouest (Émergent)", tier: "tier3" },
+  { code: "EA", name_en: "East Africa (Emerging)", name_fr: "Afrique de l'Est (Émergent)", tier: "tier3" },
+  { code: "SA", name_en: "South Asia (Emerging)", name_fr: "Asie du Sud (Émergent)", tier: "tier3" }
+];
 
 const SERVICES_DATA_EN = [
   {
     id: "business-intelligence",
     title: "Business Intelligence (BI)",
     description: "Translating complex operational data into clear historical trends and predictive forecasting.",
-    details: "We design robust data warehouses, build automated ETL pipelines, and construct structured reports that turn raw transaction logs into clear, actionable executive guidance.",
+    details: "We design robust data warehouses, build automated ETL pipelines, and construct structured reports powered by the Suite's analytical modules to give clear executive guidance.",
     tag: "Business Intelligence"
   },
   {
@@ -69,7 +116,7 @@ const SERVICES_DATA_FR = [
     id: "business-intelligence",
     title: "Business Intelligence (BI)",
     description: "Traduction de données opérationnelles complexes en tendances historiques claires et prévisions prédictives.",
-    details: "Nous concevons des entrepôts de données robustes, construisons des pipelines ETL automatisés et élaborons des rapports structurés qui transforment les journaux de transactions bruts en conseils décisionnels clairs et exploitables.",
+    details: "Nous concevons des entrepôts de données robustes, construisons des pipelines ETL automatisés et élaborons des rapports structurés alimentés par les modules analytiques de la Suite pour donner des orientations claires.",
     tag: "Business Intelligence"
   },
   {
@@ -125,87 +172,133 @@ const SERVICES_DATA_FR = [
 
 const PRODUCTS_DATA_EN = [
   {
-    id: "atlascorr-ai",
-    title: "AtlasCorr AI",
-    description: "A global trade-corridor intelligence engine mapping enterprise export opportunities on-demand.",
-    details: "AtlasCorr AI aggregates global market signals, tariff policies, and logistical data to guide organizations through expanding their footprint, offering automated feasibility reports instantly.",
+    id: "hs-code-helper",
+    title: "HS Code Helper",
+    description: "Instant product classification & tariff awareness.",
+    details: "Coordinates specialized classifier agents to resolve raw cargo descriptions to international Harmonized System (HS) chapters instantly, mapping general product classes to correct import codes.",
     tag: "Trade Intelligence",
-    demoUrl: "https://demo.meridiens.co/atlascorr",
-    pageUrl: "products.html#atlascorr-ai",
-    brandText: "AC"
+    brandText: "HS",
+    region_presets: ["USMCA", "EU TARIC", "GCC", "Maghreb", "African Union"]
   },
   {
-    id: "meridian-flow",
-    title: "Meridian Flow",
-    description: "An agentic pipeline builder that automates cross-border documentation and compliance audits.",
-    details: "Meridian Flow coordinates autonomous agent networks to read, translate, check compliance of, and route trade documents, drastically reducing manual processing time for compliance reviews.",
-    tag: "Automation",
-    demoUrl: "https://demo.meridiens.co/meridianflow",
-    pageUrl: "products.html#meridian-flow",
-    brandText: "MF"
+    id: "tariff-checker",
+    title: "Tariff Checker",
+    description: "Know your duties before you ship.",
+    details: "Scrapes and parses bilateral trade agreements on-demand to fetch applicable custom duty rates, taxes, and port tariffs based on target corridor HS codes.",
+    tag: "Customs Compliance",
+    brandText: "TC",
+    region_presets: ["CBSA/CBP", "EU TARIC", "GCC Common Tariff", "AfCFTA"]
   },
   {
-    id: "epistemic-engine",
-    title: "Epistemic Engine",
-    description: "A cognitive semantic search and entity extraction engine mapping complex corporate knowledge bases.",
-    details: "Epistemic Engine uses agentic RAG and natural language pipelines to crawl, parse, and structure unstructured enterprise documentation into interactive, queryable semantic knowledge graphs.",
-    tag: "Applied AI / RAG",
-    demoUrl: "https://demo.meridiens.co/epistemic",
-    pageUrl: "products.html#epistemic-engine",
-    brandText: "EE"
+    id: "corridor-finder",
+    title: "Corridor Finder",
+    description: "Discover viable trade routes instantly.",
+    details: "Scores transit corridors dynamically. Models transport routes, shipping congestion, political risk scores, and estimated cargo transit times between origin and destination ports.",
+    tag: "Logistics Optimization",
+    brandText: "CF",
+    region_presets: ["North America", "Europe", "MENA", "West Africa", "Southeast Asia"]
   },
   {
-    id: "ifc-compliance",
-    title: "IFC Compliance Auditor",
-    description: "An autonomous inspector verifying construction BIM models against regulatory codes.",
-    details: "Currently under development, the IFC Compliance Auditor maps geometric and metadata properties of Industry Foundation Classes (IFC) files, cross-referencing them against regional municipal building regulations.",
-    tag: "Automation / Vision",
-    demoUrl: "products.html#ifc-compliance",
-    pageUrl: "products.html#ifc-compliance",
-    brandText: "ICA"
+    id: "market-signal-lens",
+    title: "Market Signal Lens",
+    description: "See demand patterns before entering a market.",
+    details: "Aggregates localized commercial signals, buyer searches, and historical import growth data to rank consumer demand changes in target nations.",
+    tag: "Market Intelligence",
+    brandText: "ML",
+    region_presets: ["Canada", "Algeria", "UAE", "Senegal", "France", "UK"]
+  },
+  {
+    id: "document-parser",
+    title: "Document Parser",
+    description: "Automate compliance paperwork.",
+    details: "Uses multi-agent language nodes to parse custom bills of lading, commercial invoices, and certificates of origin, flagging missing forms and compliance conflicts.",
+    tag: "Agentic Automation",
+    brandText: "DP",
+    region_presets: ["English (EN)", "French (FR)", "Arabic (AR)"]
+  },
+  {
+    id: "logistics-lane-analyzer",
+    title: "Logistics Lane Analyzer",
+    description: "Understand shipping lane viability.",
+    details: "Models historical and real-time port metrics, weather bottlenecks, and shipping lane efficiency, scoring routes to reduce transit costs.",
+    tag: "Supply Chain",
+    brandText: "LA",
+    region_presets: ["Montreal", "Vancouver", "Jebel Ali", "Dakar", "Rotterdam"]
+  },
+  {
+    id: "feasibility-builder",
+    title: "Feasibility Builder",
+    description: "Generate export feasibility reports automatically.",
+    details: "Compiles outputs from all other Suite micro-apps to build a comprehensive, structured PDF export business plan, complete with timeline and custom costs.",
+    tag: "Synthesis / Report",
+    brandText: "FB",
+    region_presets: ["PDF summary", "dashboard module", "API response"]
   }
 ];
 
 const PRODUCTS_DATA_FR = [
   {
-    id: "atlascorr-ai",
-    title: "AtlasCorr AI",
-    description: "Un moteur d'intelligence de corridors commerciaux mondiaux cartographiant les opportunités d'exportation sur demande.",
-    details: "AtlasCorr AI agrège les signaux du marché mondial, les politiques tarifaires et les données logistiques pour guider l'expansion des entreprises, en générant des rapports de faisabilité de manière instantanée.",
+    id: "hs-code-helper",
+    title: "HS Code Helper",
+    description: "Classification instantanée des produits & aperçu des tarifs.",
+    details: "Coordonne les agents de classification pour résoudre les descriptions de fret en codes du Système Harmonisé (SH), associant les classes de produits aux codes d'importation exacts.",
     tag: "Intelligence Commerciale",
-    demoUrl: "https://demo.meridiens.co/atlascorr",
-    pageUrl: "products.html#atlascorr-ai",
-    brandText: "AC"
+    brandText: "HS",
+    region_presets: ["ACEUM", "TARIC UE", "CCG", "Maghreb", "Union Africaine"]
   },
   {
-    id: "meridian-flow",
-    title: "Meridian Flow",
-    description: "Un concepteur de pipelines d'agents qui automatise la documentation transfrontalière et les audits de conformité.",
-    details: "Meridian Flow coordonne des réseaux d'agents autonomes pour lire, traduire, valider et acheminer les documents commerciaux, réduisant considérablement le temps de traitement manuel.",
-    tag: "Automatisation",
-    demoUrl: "https://demo.meridiens.co/meridianflow",
-    pageUrl: "products.html#meridian-flow",
-    brandText: "MF"
+    id: "tariff-checker",
+    title: "Tariff Checker",
+    description: "Connaissez vos droits avant d’expédier.",
+    details: "Scrape et analyse les accords commerciaux bilatéraux à la demande pour récupérer les taux de droits de douane, taxes et tarifs portuaires selon le code SH cible.",
+    tag: "Conformité Douanière",
+    brandText: "TC",
+    region_presets: ["ASFC/CBP", "TARIC UE", "Tarif commun CCG", "ZLECAF"]
   },
   {
-    id: "epistemic-engine",
-    title: "Epistemic Engine",
-    description: "Moteur de recherche sémantique cognitive et d'extraction d'entités cartographiant les bases de connaissances d'entreprise.",
-    details: "Epistemic Engine s'appuie sur le RAG agentique et des pipelines de langage naturel pour explorer, analyser et structurer la documentation d'entreprise non structurée sous forme de graphes de connaissances.",
-    tag: "IA Appliquée / RAG",
-    demoUrl: "https://demo.meridiens.co/epistemic",
-    pageUrl: "products.html#epistemic-engine",
-    brandText: "EE"
+    id: "corridor-finder",
+    title: "Corridor Finder",
+    description: "Découvrez instantanément des routes commerciales viables.",
+    details: "Évalue dynamiquement les corridors de transit. Modélise les itinéraires, la congestion portuaire, le risque politique et les temps de transit estimés.",
+    tag: "Optimisation Logistique",
+    brandText: "CF",
+    region_presets: ["Amérique du Nord", "Europe", "MOAN", "Afrique de l'Ouest", "Asie du Sud-Est"]
   },
   {
-    id: "ifc-compliance",
-    title: "IFC Compliance Auditor",
-    description: "Inspecteur autonome vérifiant la conformité des maquettes BIM de construction vis-à-vis des codes réglementaires.",
-    details: "Actuellement en développement, l'IFC Compliance Auditor cartographie les propriétés géométriques et de métadonnées des fichiers IFC, les recoupant avec les réglementations de construction locales.",
-    tag: "Automatisation / Vision",
-    demoUrl: "products.html#ifc-compliance",
-    pageUrl: "products.html#ifc-compliance",
-    brandText: "ICA"
+    id: "market-signal-lens",
+    title: "Market Signal Lens",
+    description: "Visualisez les tendances de demande avant d’entrer sur un marché.",
+    details: "Agrège les signaux commerciaux locaux, les requêtes des acheteurs et la croissance historique des importations pour classer la demande par pays.",
+    tag: "Intelligence de Marché",
+    brandText: "ML",
+    region_presets: ["Canada", "Algérie", "EAU", "Sénégal", "France", "Royaume-Uni"]
+  },
+  {
+    id: "document-parser",
+    title: "Document Parser",
+    description: "Automatisez la paperasse de conformité.",
+    details: "Utilise des nœuds d'agents linguistiques pour analyser les connaissements, factures commerciales et certificats d'origine, signalant les erreurs de conformité.",
+    tag: "Automatisation d'Agents",
+    brandText: "DP",
+    region_presets: ["Anglais (EN)", "Français (FR)", "Arabe (AR)"]
+  },
+  {
+    id: "logistics-lane-analyzer",
+    title: "Logistics Lane Analyzer",
+    description: "Comprenez la viabilité des voies logistiques.",
+    details: "Modélise l'efficacité des ports et des voies maritimes en temps réel, évaluant les goulets d'étranglement pour réduire les coûts de transport.",
+    tag: "Chaîne Logistique",
+    brandText: "LA",
+    region_presets: ["Montréal", "Vancouver", "Jebel Ali", "Dakar", "Rotterdam"]
+  },
+  {
+    id: "feasibility-builder",
+    title: "Feasibility Builder",
+    description: "Générez automatiquement des rapports de faisabilité à l’export.",
+    details: "Compile les résultats des autres micro-applications de la Suite pour générer un plan d'exportation structuré au format PDF avec calendrier et coûts personnalisés.",
+    tag: "Synthèse / Rapport",
+    brandText: "FB",
+    region_presets: ["Résumé PDF", "module de tableau de bord", "réponse API"]
   }
 ];
 
