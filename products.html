@@ -3,40 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products & Portfolio | Meridiens</title>
+  <title>Systems & Lab | Meridiens</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- HEADER -->
   <header>
-    <div class="container nav-container">
-      <a href="index.html" class="logo">
-        <span class="logo-main">MERIDIENS</span>
-        <span class="logo-sub">Global BI & Applied AI</span>
-      </a>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link" data-i18n="nav-home">Home</a></li>
-        <li><a href="services.html" class="nav-link" data-i18n="nav-services">Services</a></li>
-        <li><a href="products.html" class="nav-link active" data-i18n="nav-products">Products</a></li>
-        <li><a href="about.html" class="nav-link" data-i18n="nav-about">About</a></li>
-        <li><a href="contact.html" class="nav-link" data-i18n="nav-contact">Contact</a></li>
-      </ul>
+    <div class="container">
+      <nav class="site-nav">
+        <a href="index.html" class="logo">MERIDIENS</a>
+        <div class="nav-links">
+          <a href="products.html">Systems & Lab</a>
+          <a href="services.html">Advisory</a>
+          <a href="about.html">About & Registry</a>
+          <a href="contact.html" class="btn-cta">Engage Studio</a>
+        </div>
+      </nav>
     </div>
   </header>
 
   <!-- INTRO HERO -->
   <section class="about-hero">
     <div class="container">
-      <span class="section-subtitle" data-i18n="products-subtitle">Product Portfolio</span>
-      <h1 style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);" data-i18n="products-title">Functional Software Milestones</h1>
-      <p style="color: var(--color-text-muted); max-width: 700px; font-size: 1.1rem;" data-i18n="products-description">
-        Operational platforms built by our engineers to solve complex business intelligence, multi-agent automation, and regulatory challenges.
+      <span class="section-subtitle">Systems & Lab</span>
+      <h1 style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">Applied Systems & Research Lab</h1>
+      <p style="color: var(--color-text-muted); max-width: 700px; font-size: 1.1rem;">
+        Autonomous engines, supply chain architectures, and open-source models engineered by Meridiens.
       </p>
     </div>
   </section>
@@ -45,32 +38,16 @@
   <section class="section">
     <div class="container">
       
-      <!-- Simulator Control Panel -->
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; margin-bottom: 20px;">
-        <h2 style="font-size: 1.5rem; font-weight: 700; margin: 0;" data-i18n="suite-title">Meridiens Suite</h2>
-        <div class="region-selector-container"></div>
-      </div>
+      <!-- Dynamic Category Filter Bar -->
+      <div id="filter-container" class="filter-bar"></div>
 
-      <div class="pricing-summary-bar">
-        <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-          <div>
-            <span style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; color: var(--color-primary); display: block;" data-i18n="session-total-cost">Total Simulated Billing:</span>
-            <span class="session-cost-display" style="font-size: 1.4rem; font-weight: 700; color: var(--color-text); line-height: 1.2;">$0.00 USD</span>
-          </div>
-          <div style="border-left: 1px solid var(--color-border); padding-left: 20px; max-width: 450px;">
-            <span style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; color: var(--color-text-muted); display: block;" data-i18n="pricing-title">Adaptive Billing</span>
-            <span style="font-size: 0.8rem; color: var(--color-text-muted);" data-i18n="pricing-description">Simulation of Pay-Per-Result usage billing based on the active region's tier profile.</span>
-          </div>
-        </div>
-        <button onclick="CT.usage.clearSession()" class="btn-simulator-reset" data-i18n="btn-clear-session">Reset Simulator Session</button>
-      </div>
-
+      <!-- Render Target -->
       <div id="products-container" class="cards-grid">
         <!-- Dynamically loaded via js/main.js & js/data.js -->
         
         <!-- Fallback loader / Spinner -->
         <div style="grid-column: 1 / -1; text-align: center; padding: var(--spacing-xl); color: var(--color-text-muted);">
-          <p>Loading products...</p>
+          <p>Loading projects...</p>
         </div>
       </div>
 
@@ -78,7 +55,7 @@
       <noscript>
         <div style="background-color: var(--color-bg-card); padding: var(--spacing-lg); border: 1px solid var(--color-border); border-radius: var(--border-radius); text-align: center; margin-top: var(--spacing-md);">
           <p style="font-size: 1.1rem; font-weight: 600;">JavaScript Required</p>
-          <p style="color: var(--color-text-muted); font-size: 0.95rem;">The Meridiens Suite interactive simulator requires JavaScript to run classification, routing, and pricing models dynamically.</p>
+          <p style="color: var(--color-text-muted); font-size: 0.95rem;">The dynamic filtering and portfolio rendering require JavaScript to load assets dynamically.</p>
         </div>
       </noscript>
 
@@ -89,12 +66,12 @@
   <section class="section-alt">
     <div class="container">
       <div style="background-color: var(--color-bg-card); padding: var(--spacing-lg); border-radius: var(--border-radius); border: 1px solid var(--color-border); max-width: 800px; margin: 0 auto;">
-        <span class="section-subtitle" style="font-size: 0.8rem; margin-bottom: 0;" data-i18n="access-title">Access Controls</span>
-        <h3 style="font-size: 1.3rem; margin-bottom: var(--spacing-xs); font-weight: 700;" data-i18n="demo-notice-title">Demo Environment Notice</h3>
-        <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: var(--spacing-sm);" data-i18n="demo-notice-desc">
+        <span class="section-subtitle" style="font-size: 0.8rem; margin-bottom: 0;">Access Controls</span>
+        <h3 style="font-size: 1.3rem; margin-bottom: var(--spacing-xs); font-weight: 700;">Demo Environment Notice</h3>
+        <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: var(--spacing-sm);">
           Active prototypes and operational dashboards are hosted in sandboxed subdomains (`demo.meridiens.co`) and are encrypted. Authorized enterprise client access requires credentials distributed during project onboarding.
         </p>
-        <p style="color: var(--color-text-muted); font-size: 0.9rem;" data-i18n="demo-notice-request">
+        <p style="color: var(--color-text-muted); font-size: 0.9rem;">
           To request test credentials or arrange a live walk-through with our systems engineers, please submit a query via our <a href="contact.html">Contact Page</a>.
         </p>
       </div>
@@ -110,39 +87,36 @@
             <span class="logo-main">MERIDIENS</span>
             <span class="logo-sub">Global BI & Applied AI</span>
           </a>
-          <p class="footer-about" data-i18n="footer-about">
-            Public-facing brand of <strong>18138711 CANADA INC.</strong>, a federally registered consulting company delivering data engineering and AI automation solutions globally.
+          <p class="footer-about">
+            Public-facing brand of <strong>18138711 CANADA INC.</strong>, a federally registered Canadian consulting company in Montreal delivering data engineering and AI automation solutions.
           </p>
         </div>
         <div>
-          <h4 class="footer-title" data-i18n="footer-nav-title">Navigation</h4>
+          <h4 class="footer-title">Navigation</h4>
           <ul class="footer-links">
-            <li><a href="index.html" data-i18n="nav-home">Home</a></li>
-            <li><a href="services.html" data-i18n="nav-services">Services</a></li>
-            <li><a href="products.html" data-i18n="nav-products">Products</a></li>
-            <li><a href="about.html" data-i18n="nav-about">About Us</a></li>
-            <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Systems & Lab</a></li>
+            <li><a href="services.html">Advisory</a></li>
+            <li><a href="about.html">About & Registry</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="footer-title" data-i18n="footer-reach-title">Global Reach</h4>
+          <h4 class="footer-title">Global Reach</h4>
           <div class="footer-corridors">
-            <p data-i18n="footer-reach-desc"><strong>Dynamic Corridors:</strong> On-demand corridor routing, customs auditing, and supply chain mapping across any trade route worldwide.</p>
-            <p style="margin-top: 10px;"><span data-i18n="footer-contact-lbl">Contact: </span><a href="mailto:info@meridiens.co" style="color: var(--color-accent);">info@meridiens.co</a></p>
+            <p><strong>Dynamic Corridors:</strong> On-demand corridor routing, customs auditing, and supply chain mapping across any trade route worldwide.</p>
+            <p style="margin-top: 10px;">HQ: Montreal, QC, Canada &bull; <a href="mailto:info@meridiens.co" style="color: var(--color-accent);">info@meridiens.co</a></p>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p data-i18n="footer-copy">&copy; 2026 18138711 CANADA INC. All rights reserved. Operating under brand Meridiens.</p>
-        <p data-i18n="footer-reg">Federal Registration Number: 18138711 (Canada)</p>
+        <p>&copy; 2026 18138711 CANADA INC. All rights reserved. Operating under brand Meridiens.</p>
+        <p>Federal Registration Number: 18138711 (Canada)</p>
       </div>
     </div>
   </footer>
 
-  <script src="js/translations.js"></script>
   <script src="js/data.js"></script>
-  <script src="js/region.js"></script>
-  <script src="js/usage.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

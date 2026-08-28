@@ -10,32 +10,25 @@
 
   <!-- HEADER -->
   <header>
-    <div class="container nav-container">
-      <a href="index.html" class="logo">
-        <span class="logo-main">MERIDIENS</span>
-        <span class="logo-sub">Global BI & Applied AI</span>
-      </a>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link" data-i18n="nav-home">Home</a></li>
-        <li><a href="services.html" class="nav-link" data-i18n="nav-services">Services</a></li>
-        <li><a href="products.html" class="nav-link" data-i18n="nav-products">Products</a></li>
-        <li><a href="about.html" class="nav-link" data-i18n="nav-about">About</a></li>
-        <li><a href="contact.html" class="nav-link active" data-i18n="nav-contact">Contact</a></li>
-      </ul>
+    <div class="container">
+      <nav class="site-nav">
+        <a href="index.html" class="logo">MERIDIENS</a>
+        <div class="nav-links">
+          <a href="products.html">Systems & Lab</a>
+          <a href="services.html">Advisory</a>
+          <a href="about.html">About & Registry</a>
+          <a href="contact.html" class="btn-cta">Engage Studio</a>
+        </div>
+      </nav>
     </div>
   </header>
 
   <!-- INTRO HERO -->
   <section class="about-hero">
     <div class="container">
-      <span class="section-subtitle" data-i18n="contact-subtitle">Get in touch</span>
-      <h1 style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);" data-i18n="contact-title">Connect with Our Engineers</h1>
-      <p style="color: var(--color-text-muted); max-width: 700px; font-size: 1.1rem;" data-i18n="contact-description">
+      <span class="section-subtitle">Get in touch</span>
+      <h1 style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">Connect with Our Studio</h1>
+      <p style="color: var(--color-text-muted); max-width: 700px; font-size: 1.1rem;">
         We are ready to design, deploy, and scale your data infrastructure and agent systems. Reach out to schedule a technical discovery call.
       </p>
     </div>
@@ -48,28 +41,28 @@
         
         <!-- Info Column -->
         <div class="contact-info-panel">
-          <h2 style="font-size: 1.8rem; margin-bottom: var(--spacing-xs);" data-i18n="inquiry-title">Inquiry Information</h2>
-          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: var(--spacing-md);" data-i18n="inquiry-desc">
+          <h2 style="font-size: 1.8rem; margin-bottom: var(--spacing-xs);">Inquiry Information</h2>
+          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: var(--spacing-md);">
             To help our engineering team review your requirements, please describe your existing system tech stack and optimization goals.
           </p>
 
           <div class="contact-detail-card">
-            <h3 class="contact-detail-title" data-i18n="lbl-email">Direct Email</h3>
+            <h3 class="contact-detail-title">Direct Email</h3>
             <p class="contact-detail-value">
               <a href="mailto:info@meridiens.co">info@meridiens.co</a>
             </p>
           </div>
 
           <div class="contact-detail-card">
-            <h3 class="contact-detail-title" data-i18n="lbl-presence">Global Presence</h3>
-            <p class="contact-detail-value" style="color: var(--color-text-muted);" data-i18n="val-presence">
+            <h3 class="contact-detail-title">Global Presence</h3>
+            <p class="contact-detail-value" style="color: var(--color-text-muted);">
               Federally Registered in Canada · Serving Enterprises Globally
             </p>
           </div>
 
           <div class="contact-detail-card">
-            <h3 class="contact-detail-title" data-i18n="lbl-reg">Federal Registration</h3>
-            <p class="contact-detail-value" style="color: var(--color-text-muted); font-size: 0.9rem;" data-i18n="val-reg">
+            <h3 class="contact-detail-title">Federal Registration</h3>
+            <p class="contact-detail-value" style="color: var(--color-text-muted); font-size: 0.9rem;">
               Canada Business Corporations Act (CBCA)<br>
               Corporate ID: 18138711
             </p>
@@ -84,36 +77,36 @@
             
             <div class="form-row">
               <div class="form-group">
-                <label for="name" class="form-label" data-i18n="form-name">Full Name *</label>
+                <label for="name" class="form-label">Full Name *</label>
                 <input type="text" id="name" name="name" class="form-control" placeholder="Jane Doe" required>
               </div>
               <div class="form-group">
-                <label for="email" class="form-label" data-i18n="form-email">Email Address *</label>
+                <label for="email" class="form-label">Email Address *</label>
                 <input type="email" id="email" name="email" class="form-control" placeholder="jane@company.com" required>
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
-                <label for="company" class="form-label" data-i18n="form-company">Company Name</label>
+                <label for="company" class="form-label">Company Name</label>
                 <input type="text" id="company" name="company" class="form-control" placeholder="Acme Corp">
               </div>
               <div class="form-group">
-                <label for="subject" class="form-label" data-i18n="form-subject">Core Subject *</label>
-                <input type="text" id="subject" name="subject" class="form-control" placeholder="e.g. Pipeline Audit, Agent Integration, BI Dashboard" data-i18n-placeholder="form-placeholder-subject" required>
+                <label for="subject" class="form-label">Core Subject *</label>
+                <input type="text" id="subject" name="subject" class="form-control" placeholder="e.g. Pipeline Audit, Agent Integration, BI Dashboard" required>
               </div>
             </div>
 
             <div class="form-group">
-              <label for="message" class="form-label" data-i18n="form-msg">Your Message *</label>
-              <textarea id="message" name="message" class="form-control" placeholder="Please outline your data pipeline challenges, target compliance corridors, or required agent flows..." data-i18n-placeholder="form-placeholder-msg" required></textarea>
+              <label for="message" class="form-label">Your Message *</label>
+              <textarea id="message" name="message" class="form-control" placeholder="Please outline your data pipeline challenges, target compliance corridors, or required agent flows..." required></textarea>
             </div>
 
             <div class="form-group">
-              <label class="form-label" data-i18n="form-file">Attach Technical Specs (PDF, JSON, Max 10MB)</label>
+              <label class="form-label">Attach Technical Specs (PDF, JSON, Max 10MB)</label>
               <div class="file-upload-wrapper">
-                <div class="file-upload-btn">📁 Choose Specs File</div>
                 <input type="file" id="file-upload" name="attachment" class="file-upload-input" accept=".pdf,.json,.txt,.zip">
+                <div class="file-upload-btn">📎 Choose Specs File</div>
               </div>
               <div id="file-name-display" class="file-name-display"></div>
             </div>
@@ -121,9 +114,9 @@
             <!-- Anti-Spam Honeypot Field -->
             <input type="text" name="_gotcha" style="display:none">
 
-            <button type="submit" class="btn btn-primary btn-block" style="width: 100%; justify-content: center; margin-top: var(--spacing-sm);" data-i18n="btn-submit">Send Inquiry</button>
-            <p style="text-align: center; font-size: 0.8rem; color: var(--color-text-muted); margin-top: 15px;" data-i18n="contact-enterprise-note">
-               For enterprise integrations or high-volume usage of the Meridiens Suite APIs, contact us for volume-based custom pricing.
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: var(--spacing-sm);">Send Inquiry</button>
+            <p style="text-align: center; font-size: 0.8rem; color: var(--color-text-muted); margin-top: 15px;">
+               For enterprise integrations or high-volume usage of the Meridiens Lab systems, contact us for volume-based custom pricing.
             </p>
           </form>
         </div>
@@ -141,39 +134,36 @@
             <span class="logo-main">MERIDIENS</span>
             <span class="logo-sub">Global BI & Applied AI</span>
           </a>
-          <p class="footer-about" data-i18n="footer-about">
-            Public-facing brand of <strong>18138711 CANADA INC.</strong>, a federally registered consulting company delivering data engineering and AI automation solutions globally.
+          <p class="footer-about">
+            Public-facing brand of <strong>18138711 CANADA INC.</strong>, a federally registered Canadian consulting company in Montreal delivering data engineering and AI automation solutions.
           </p>
         </div>
         <div>
-          <h4 class="footer-title" data-i18n="footer-nav-title">Navigation</h4>
+          <h4 class="footer-title">Navigation</h4>
           <ul class="footer-links">
-            <li><a href="index.html" data-i18n="nav-home">Home</a></li>
-            <li><a href="services.html" data-i18n="nav-services">Services</a></li>
-            <li><a href="products.html" data-i18n="nav-products">Products</a></li>
-            <li><a href="about.html" data-i18n="nav-about">About Us</a></li>
-            <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Systems & Lab</a></li>
+            <li><a href="services.html">Advisory</a></li>
+            <li><a href="about.html">About & Registry</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="footer-title" data-i18n="footer-reach-title">Global Reach</h4>
+          <h4 class="footer-title">Global Reach</h4>
           <div class="footer-corridors">
-            <p data-i18n="footer-reach-desc"><strong>Dynamic Corridors:</strong> On-demand corridor routing, customs auditing, and supply chain mapping across any trade route worldwide.</p>
-            <p style="margin-top: 10px;"><span data-i18n="footer-contact-lbl">Contact: </span><a href="mailto:info@meridiens.co" style="color: var(--color-accent);">info@meridiens.co</a></p>
+            <p><strong>Dynamic Corridors:</strong> On-demand corridor routing, customs auditing, and supply chain mapping across any trade route worldwide.</p>
+            <p style="margin-top: 10px;">HQ: Montreal, QC, Canada &bull; <a href="mailto:info@meridiens.co" style="color: var(--color-accent);">info@meridiens.co</a></p>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p data-i18n="footer-copy">&copy; 2026 18138711 CANADA INC. All rights reserved. Operating under brand Meridiens.</p>
-        <p data-i18n="footer-reg">Federal Registration Number: 18138711 (Canada)</p>
+        <p>&copy; 2026 18138711 CANADA INC. All rights reserved. Operating under brand Meridiens.</p>
+        <p>Federal Registration Number: 18138711 (Canada)</p>
       </div>
     </div>
   </footer>
 
-  <script src="js/translations.js"></script>
   <script src="js/data.js"></script>
-  <script src="js/region.js"></script>
-  <script src="js/usage.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

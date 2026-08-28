@@ -10,33 +10,26 @@
 
   <!-- HEADER -->
   <header>
-    <div class="container nav-container">
-      <a href="index.html" class="logo">
-        <span class="logo-main">MERIDIENS</span>
-        <span class="logo-sub">Global BI & Applied AI</span>
-      </a>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link" data-i18n="nav-home">Home</a></li>
-        <li><a href="services.html" class="nav-link" data-i18n="nav-services">Services</a></li>
-        <li><a href="products.html" class="nav-link" data-i18n="nav-products">Products</a></li>
-        <li><a href="about.html" class="nav-link active" data-i18n="nav-about">About</a></li>
-        <li><a href="contact.html" class="nav-link" data-i18n="nav-contact">Contact</a></li>
-      </ul>
+    <div class="container">
+      <nav class="site-nav">
+        <a href="index.html" class="logo">MERIDIENS</a>
+        <div class="nav-links">
+          <a href="products.html">Systems & Lab</a>
+          <a href="services.html">Advisory</a>
+          <a href="about.html">About & Registry</a>
+          <a href="contact.html" class="btn-cta">Engage Studio</a>
+        </div>
+      </nav>
     </div>
   </header>
 
   <!-- INTRO HERO -->
   <section class="about-hero">
     <div class="container">
-      <span class="section-subtitle" data-i18n="nav-about">About Us</span>
+      <span class="section-subtitle">About Us</span>
       <h1 style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">Meridiens</h1>
-      <p style="color: var(--color-text-muted); max-width: 700px; font-size: 1.1rem;" data-i18n="about-subtitle">
-        An engineering-first consultancy bridging international trade lanes through modern AI architectures, database structures, and quantitative data modeling.
+      <p style="color: var(--color-text-muted); max-width: 700px; font-size: 1.1rem;">
+        An engineering-first applied intelligence studio bridging international trade lanes through modern AI architectures, database structures, and quantitative data modeling.
       </p>
     </div>
   </section>
@@ -47,15 +40,15 @@
       <div class="about-intro-grid">
         <!-- Text Column -->
         <div>
-          <h2 style="font-size: 1.8rem; margin-bottom: var(--spacing-sm);" data-i18n="about-subtitle">Corporate Profile & Standing</h2>
-          <p style="color: var(--color-text-muted); margin-bottom: var(--spacing-md);" data-i18n="about-desc">
+          <h2 style="font-size: 1.8rem; margin-bottom: var(--spacing-sm);">Corporate Profile & Standing</h2>
+          <p style="color: var(--color-text-muted); margin-bottom: var(--spacing-md);">
             Meridiens is the public-facing brand for <strong>18138711 CANADA INC.</strong>, a federally registered corporation providing data engineering and AI automation solutions. We serve enterprises of all sizes globally, developing custom systems to translate raw information into clear margin improvements.
           </p>
           <p style="color: var(--color-text-muted); margin-bottom: var(--spacing-md);">
             Our core mission spans <strong>Business Intelligence (BI)</strong>, <strong>applied AI systems</strong>, <strong>export intelligence</strong>, <strong>digital transformation</strong>, and <strong>agentic automation</strong>.
           </p>
           
-          <h3 style="font-size: 1.3rem; margin-top: var(--spacing-lg); margin-bottom: var(--spacing-xs);">Our Consulting Philosophy</h3>
+          <h3 style="font-size: 1.3rem; margin-top: var(--spacing-lg); margin-bottom: var(--spacing-xs);">Our Architectural Philosophy</h3>
           <p style="color: var(--color-text-muted); margin-bottom: var(--spacing-sm);">
             We avoid template-driven slide presentations. Instead, we build functional software, clean database designs, and automated agent pipelines that connect directly into your infrastructure.
           </p>
@@ -68,13 +61,13 @@
 
         <!-- Sidebar / Founder Info -->
         <div class="about-philosophy">
-          <h3 style="font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-primary); margin-bottom: var(--spacing-sm); font-family: var(--font-heading);" data-i18n="founder-title">
+          <h3 style="font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-primary); margin-bottom: var(--spacing-sm); font-family: var(--font-heading);">
             Founder Background
           </h3>
-          <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: var(--spacing-sm);" data-i18n="founder-p1">
+          <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: var(--spacing-sm);">
             The company was established by a senior systems engineer with an extensive background in <strong>Business Intelligence (BI)</strong>, <strong>export logistics modeling</strong>, and <strong>agentic automation</strong>.
           </p>
-          <p style="font-size: 0.95rem; color: var(--color-text-muted);" data-i18n="founder-p2">
+          <p style="font-size: 0.95rem; color: var(--color-text-muted);">
             Recognizing the structural overhead faced by growing companies during global expansion, the founder designed Meridiens' core software tools to automate compliance checks and render export analytics instantly.
           </p>
         </div>
@@ -86,9 +79,9 @@
   <section class="section-alt">
     <div class="container">
       <div class="section-title-wrap">
-        <span class="section-subtitle" data-i18n="corridor-subtitle">Dynamic Routing</span>
-        <h2 class="section-title" data-i18n="corridor-title">Global Corridor Competencies</h2>
-        <p style="color: var(--color-text-muted); max-width: 650px; margin: 10px auto 0 auto; font-size: 0.95rem;" data-i18n="corridor-desc-main">
+        <span class="section-subtitle">Dynamic Routing</span>
+        <h2 class="section-title">Global Corridor Competencies</h2>
+        <p style="color: var(--color-text-muted); max-width: 650px; margin: 10px auto 0 auto; font-size: 0.95rem;">
           Rather than being restricted to specific regional zones, Meridiens' quantitative tools evaluate shipping lines, custom tariffs, and bilateral compliance rules globally.
         </p>
       </div>
@@ -97,35 +90,22 @@
         <!-- On-Demand Mapping -->
         <div class="corridor-item">
           <span class="corridor-flag">🌐</span>
-          <h3 class="corridor-name" data-i18n="corridor-1-title">On-Demand Corridor Analysis</h3>
-          <p class="corridor-desc" data-i18n="corridor-1-desc">Audit any trade route, harbor tariff list, or custom regulation package globally using our cloud systems.</p>
+          <h3 class="corridor-name">On-Demand Corridor Analysis</h3>
+          <p class="corridor-desc">Audit any trade route, harbor tariff list, or custom regulation package globally using our cloud systems.</p>
         </div>
         <!-- North America & Europe -->
         <div class="corridor-item">
           <span class="corridor-flag">🌎</span>
-          <h3 class="corridor-name" data-i18n="corridor-2-title">Bilateral Frameworks</h3>
-          <p class="corridor-desc" data-i18n="corridor-2-desc">Deep modeling of USMCA trade policies, CBSA/CBP exports, and cross-border regulatory compliance.</p>
+          <h3 class="corridor-name">Bilateral Frameworks</h3>
+          <p class="corridor-desc">Deep modeling of USMCA trade policies, CBSA/CBP exports, and cross-border regulatory compliance.</p>
         </div>
         <!-- Global Bilateral Audits -->
         <div class="corridor-item">
           <span class="corridor-flag">📈</span>
-          <h3 class="corridor-name" data-i18n="corridor-3-title">Cross-Border Integrations</h3>
-          <p class="corridor-desc" data-i18n="corridor-3-desc">Integrating multi-lingual document translation and automated cross-border banking clearances.</p>
+          <h3 class="corridor-name">Cross-Border Integrations</h3>
+          <p class="corridor-desc">Integrating multi-lingual document translation and automated cross-border banking clearances.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-
-  <!-- SUITE PHILOSOPHY SECTION -->
-  <section class="section">
-    <div class="container text-center" style="max-width: 800px; margin: 0 auto;">
-      <span class="section-subtitle" data-i18n="suite-subtitle">Suite Philosophy</span>
-      <h2 style="font-size: 2rem; margin-bottom: var(--spacing-sm);" data-i18n="about-philosophy-title">Global Architecture, Local Personalization</h2>
-      <p style="color: var(--color-text-muted); font-size: 1.05rem; line-height: 1.6; margin-bottom: var(--spacing-md);" data-i18n="about-philosophy-desc">
-        At Meridiens, we believe that software should be lightweight but deeply specialized. The <strong>Meridiens Suite</strong> is engineered as a collection of modular, autonomous micro-apps. Each app is powered under-the-hood by specialized LLM agents and custom compliance parsers, dynamically adapting its pricing, currencies, and customs logic to the region in which you operate.
-      </p>
-      <a href="products.html" class="btn btn-primary" data-i18n="showcase-btn" style="padding: 0.6rem 1.4rem; font-size: 0.85rem;">Test the Suite Apps</a>
     </div>
   </section>
 
@@ -134,17 +114,17 @@
     <div class="container">
       <div style="background-color: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--border-radius); padding: var(--spacing-lg);">
         <div style="max-width: 800px; margin: 0 auto;">
-          <span class="section-subtitle" data-i18n="lab-subtitle">Active Research & Development</span>
-          <h2 style="font-size: 2rem; margin-bottom: var(--spacing-sm); font-weight: 700;" data-i18n="lab-title">Applied AI Sandbox Labs</h2>
-          <p style="color: var(--color-text-muted); font-size: 1rem; margin-bottom: var(--spacing-md); line-height: 1.6;" data-i18n="lab-p1">
+          <span class="section-subtitle">Active Research & Development</span>
+          <h2 style="font-size: 2rem; margin-bottom: var(--spacing-sm); font-weight: 700;">Applied AI Sandbox Labs</h2>
+          <p style="color: var(--color-text-muted); font-size: 1rem; margin-bottom: var(--spacing-md); line-height: 1.6;">
             We continuously research, prototype, and build advanced algorithmic solutions. Our internal labs focus on agentic architectures, dynamic knowledge graphs, and cross-border billing networks.
           </p>
-          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: var(--spacing-md);" data-i18n="lab-p2">
+          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: var(--spacing-md);">
             Currently under development are multi-agent orchestration frameworks designed to automate complex legal document analysis, municipal regulatory audits, and structured pipeline synthesis. We build functional sandboxes that let enterprise clients test raw models against proprietary data pools prior to production scaling.
           </p>
           <div style="border-top: 1px solid var(--color-border); padding-top: var(--spacing-sm); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--spacing-sm);">
-            <span style="font-size: 0.8rem; font-weight: 600; color: var(--color-secondary); text-transform: uppercase;" data-i18n="lab-meta">Focus Areas: RAG, Agentic Automation, BIM Auditing</span>
-            <a href="contact.html?subject=Inquiry: AI Sandbox Collaboration" class="btn btn-outline" style="padding: 0.4rem 1rem; font-size: 0.75rem;" data-i18n="btn-lab-collab">Request Sandbox Access</a>
+            <span style="font-size: 0.8rem; font-weight: 600; color: var(--color-secondary); text-transform: uppercase;">Focus Areas: RAG, Agentic Automation, BIM Auditing</span>
+            <a href="contact.html?subject=Inquiry: AI Sandbox Collaboration" class="btn btn-outline" style="padding: 0.4rem 1rem; font-size: 0.75rem;">Request Sandbox Access</a>
           </div>
         </div>
       </div>
@@ -160,39 +140,36 @@
             <span class="logo-main">MERIDIENS</span>
             <span class="logo-sub">Global BI & Applied AI</span>
           </a>
-          <p class="footer-about" data-i18n="footer-about">
-            Public-facing brand of <strong>18138711 CANADA INC.</strong>, a federally registered consulting company delivering data engineering and AI automation solutions globally.
+          <p class="footer-about">
+            Public-facing brand of <strong>18138711 CANADA INC.</strong>, a federally registered Canadian consulting company in Montreal delivering data engineering and AI automation solutions.
           </p>
         </div>
         <div>
-          <h4 class="footer-title" data-i18n="footer-nav-title">Navigation</h4>
+          <h4 class="footer-title">Navigation</h4>
           <ul class="footer-links">
-            <li><a href="index.html" data-i18n="nav-home">Home</a></li>
-            <li><a href="services.html" data-i18n="nav-services">Services</a></li>
-            <li><a href="products.html" data-i18n="nav-products">Products</a></li>
-            <li><a href="about.html" data-i18n="nav-about">About Us</a></li>
-            <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Systems & Lab</a></li>
+            <li><a href="services.html">Advisory</a></li>
+            <li><a href="about.html">About & Registry</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="footer-title" data-i18n="footer-reach-title">Global Reach</h4>
+          <h4 class="footer-title">Global Reach</h4>
           <div class="footer-corridors">
-            <p data-i18n="footer-reach-desc"><strong>Dynamic Corridors:</strong> On-demand corridor routing, customs auditing, and supply chain mapping across any trade route worldwide.</p>
-            <p style="margin-top: 10px;"><span data-i18n="footer-contact-lbl">Contact: </span><a href="mailto:info@meridiens.co" style="color: var(--color-accent);">info@meridiens.co</a></p>
+            <p><strong>Dynamic Corridors:</strong> On-demand corridor routing, customs auditing, and supply chain mapping across any trade route worldwide.</p>
+            <p style="margin-top: 10px;">HQ: Montreal, QC, Canada &bull; <a href="mailto:info@meridiens.co" style="color: var(--color-accent);">info@meridiens.co</a></p>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p data-i18n="footer-copy">&copy; 2026 18138711 CANADA INC. All rights reserved. Operating under brand Meridiens.</p>
-        <p data-i18n="footer-reg">Federal Registration Number: 18138711 (Canada)</p>
+        <p>&copy; 2026 18138711 CANADA INC. All rights reserved. Operating under brand Meridiens.</p>
+        <p>Federal Registration Number: 18138711 (Canada)</p>
       </div>
     </div>
   </footer>
 
-  <script src="js/translations.js"></script>
   <script src="js/data.js"></script>
-  <script src="js/region.js"></script>
-  <script src="js/usage.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
