@@ -34,7 +34,7 @@ const PRODUCTS_DATA = [
         techStack: ["CrewAI", "Google Gemini API", "Neo4j", "BYOK Architecture"],
         status: "Active Deployment",
         linkText: "Explore Engine",
-        url: "https://meridian-tariff-shield.streamlit.app"
+        url: "https://flow.meridiens.co"
     },
     {
         id: "relief-intake",
