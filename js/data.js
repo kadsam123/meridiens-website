@@ -22,7 +22,7 @@ const PRODUCTS_DATA = [
         techStack: ["Streamlit", "Python", "Spatial Mapping", "FastAPI"],
         status: "Production Ready",
         linkText: "Launch Portal",
-        url: "https://atlas-corr.meridiens.co"
+        url: "https://atlas-corr.meridiens.co/sme.html"
     },
     {
         id: "meridian-flow",
