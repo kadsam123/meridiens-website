@@ -14,10 +14,11 @@ The website is a lightweight, static client-side application built without frame
 *   **File Structure:**
     *   [`index.html`](file:///C:/Users/kissa/.gemini/antigravity/scratch/meridiens-website/index.html): Homepage detailing the dynamic ecosystem (Platforms, Agentic Engines, Open-Source & Advisory).
     *   [`products.html`](file:///C:/Users/kissa/.gemini/antigravity/scratch/meridiens-website/products.html): Systems & Lab page featuring category filtering.
+    *   [`research.html`](file:///C:/Users/kissa/.gemini/antigravity/scratch/meridiens-website/research.html): Foundational academic research vitrine (Adaptive Epistemic Intelligence, peer-reviewed lineage, interactive state engine).
     *   [`services.html`](file:///C:/Users/kissa/.gemini/antigravity/scratch/meridiens-website/services.html): Advisory page featuring consulting deliverables.
     *   [`about.html`](file:///C:/Users/kissa/.gemini/antigravity/scratch/meridiens-website/about.html): Profile of corporate registration, founder, and long-term vision.
     *   [`contact.html`](file:///C:/Users/kissa/.gemini/antigravity/scratch/meridiens-website/contact.html): Technical intake form pre-wired for Formspree.
-    *   [`styles.css`](file:///C:/Users/kissa/.gemini/antigravity/scratch/meridiens-website/styles.css): Centralized stylesheet containing custom filter-bar, badge, and card layouts.
+    *   [`styles.css`](file:///C:/Users/kissa/.gemini/antigravity/scratch/meridiens-website/styles.css): Centralized stylesheet containing custom filter-bar, badge, card layouts, and print whitepaper rules.
     *   [`js/data.js`](file:///C:/Users/kissa/.gemini/antigravity/scratch/meridiens-website/js/data.js): Content database storing categories, product, and service arrays.
     *   [`js/main.js`](file:///C:/Users/kissa/.gemini/antigravity/scratch/meridiens-website/js/main.js): Navigation mechanics, active highlighting, filter click listeners, and DOM compilers.
     *   [`CNAME`](file:///C:/Users/kissa/.gemini/antigravity/scratch/meridiens-website/CNAME): Text file containing `meridiens.co` for custom domain routing.
@@ -32,6 +33,13 @@ The ecosystem data (`js/data.js`) revolves around four key pillars responding to
 *   **OpenBYOK:** Open-source, zero-retention client connectors for enterprise data security.
 
 ---
+
+## 1.6 Foundational Research: Adaptive Epistemic Intelligence (AEI)
+The theoretical backbone of Meridiens is documented in `research.html`:
+*   **Core Principle:** Rejection of scalar confidence ($P \in [0, 1]$) in favor of multidimensional, stateful epistemic control tuples $\mathbf{E} = \langle s, \Delta\text{FD}, \text{DT}, \tau, \Phi \rangle$.
+*   **State Space:** `HYPOTHETICAL` &rarr; `SUPPORTED` &rarr; `STABLE` | `CONTESTED` | `EPISTEMIC_SILENCE` | `OBSOLETE`.
+*   **Institutional Lineage:** Grounded in peer-reviewed works (Mahrouk et al., *Frontiers in Robotics and AI* 2025; *Frontiers in Artificial Intelligence* 2025) and working monograph (2026).
+*   **Print Engine:** Supports print-to-PDF (`window.print()`) with custom white-paper formatting.
 
 ## 2. Design Language & Constantine Palette
 The UI features a Constantine-inspired palette representing stone masonry, suspension bridges, and Andalusian mosaics:

@@ -1370,4 +1370,700 @@ footer {
   }
 }
 
+/* ==========================================================================
+   MERIDIENS RESEARCH LAB & ADAPTIVE EPISTEMIC INTELLIGENCE (AEI) STYLES
+   ========================================================================== */
+
+:root {
+  --color-academic-slate: #0b192c;
+  --color-academic-navy: #1e3e62;
+  --color-academic-card: #ffffff;
+  --color-state-hypo: #3b82f6;
+  --color-state-supported: #06b6d4;
+  --color-state-stable: #10b981;
+  --color-state-contested: #f59e0b;
+  --color-state-silence: #64748b;
+  --color-state-obsolete: #ef4444;
+}
+
+/* Academic Masthead / Hero */
+.research-hero {
+  background: linear-gradient(180deg, rgba(11, 25, 44, 0.04) 0%, rgba(250, 248, 245, 0) 100%);
+  border-bottom: 1px solid var(--color-border);
+  padding: 4rem 0 3.5rem 0;
+}
+
+.research-preheader {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.75rem;
+  background: rgba(30, 90, 117, 0.08);
+  border-radius: 4px;
+  border-left: 3px solid var(--color-secondary);
+}
+
+.research-title {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  line-height: 1.15;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.research-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #4b5563;
+  max-width: 860px;
+  margin-bottom: 2rem;
+}
+
+.research-meta-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: 1.5rem;
+}
+
+.personnel-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.personnel-item {
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.personnel-role {
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.personnel-name {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.personnel-affiliation {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.btn-academic-print {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-academic-slate);
+  color: #ffffff;
+  padding: 0.65rem 1.4rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-academic-slate);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-academic-print:hover {
+  background-color: var(--color-academic-navy);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(11, 25, 44, 0.15);
+}
+
+/* Epistemic Thesis Callouts */
+.thesis-box {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.thesis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .thesis-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contrast-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 1.5rem;
+}
+
+.contrast-card.flaw {
+  border-top: 3px solid #ef4444;
+}
+
+.contrast-card.solution {
+  border-top: 3px solid var(--color-state-stable);
+}
+
+.contrast-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.formula-block {
+  background: #111827;
+  color: #38bdf8;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0.85rem 1.2rem;
+  border-radius: 4px;
+  font-size: 0.88rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+/* Scientific Lineage Cards */
+.lineage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.lineage-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  position: relative;
+}
+
+.lineage-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-secondary);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.publication-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  align-self: flex-start;
+}
+
+.badge-frontiers {
+  background: rgba(30, 90, 117, 0.1);
+  color: var(--color-secondary);
+}
+
+.badge-thesis {
+  background: rgba(200, 90, 50, 0.1);
+  color: var(--color-primary);
+}
+
+.lineage-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.lineage-desc {
+  font-size: 0.88rem;
+  color: #4b5563;
+  line-height: 1.55;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.lineage-footer {
+  border-top: 1px solid var(--color-border);
+  padding-top: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Interactive Epistemic State Machine Widget */
+.state-machine-widget {
+  background: #0b1320;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  color: #f8fafc;
+  margin: 3rem 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.widget-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.widget-status-pill {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  font-family: monospace;
+}
+
+.scenario-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.scenario-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #cbd5e1;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  text-align: left;
+}
+
+.scenario-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.scenario-btn.active {
+  background: var(--color-secondary);
+  border-color: #38bdf8;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+}
+
+/* State Graph SVG Container */
+.state-graph-canvas {
+  width: 100%;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 280px;
+}
+
+.state-svg {
+  width: 100%;
+  max-width: 820px;
+  height: auto;
+  overflow: visible;
+}
+
+.state-node {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.state-node circle {
+  transition: all 0.3s ease;
+}
+
+.state-node text {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  fill: #94a3b8;
+  text-anchor: middle;
+  transition: all 0.3s ease;
+}
+
+.state-node.active circle {
+  stroke-width: 3.5px;
+  filter: drop-shadow(0 0 8px currentColor);
+}
+
+.state-node.active text {
+  fill: #ffffff;
+  font-weight: 700;
+}
+
+.state-link {
+  stroke: rgba(255, 255, 255, 0.15);
+  stroke-width: 2;
+  transition: all 0.3s ease;
+}
+
+.state-link.active-link {
+  stroke: #38bdf8;
+  stroke-width: 3;
+  stroke-dasharray: 6 3;
+  animation: dash 1s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -9;
+  }
+}
+
+/* Decision Gate Output Panel */
+.decision-gate-panel {
+  margin-top: 1.5rem;
+  background: rgba(2, 6, 23, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.decision-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+}
+
+.decision-action-badge {
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.8rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.action-proceed {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  border: 1px solid #10b981;
+}
+
+.action-halt {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+  border: 1px solid #f59e0b;
+}
+
+.action-silence {
+  background: rgba(148, 163, 184, 0.2);
+  color: #cbd5e1;
+  border: 1px solid #64748b;
+}
+
+.decision-log-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.82rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.75rem;
+  border-radius: 4px;
+  border-left: 3px solid #38bdf8;
+}
+
+/* Formal Hypotheses & Falsification Table */
+.falsification-table-wrapper {
+  overflow-x: auto;
+  margin: 2rem 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.falsification-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.88rem;
+}
+
+.falsification-table th {
+  background-color: var(--color-academic-slate);
+  color: #ffffff;
+  padding: 0.9rem 1.2rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.falsification-table th:last-child {
+  border-right: none;
+}
+
+.falsification-table td {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.falsification-table tr:nth-child(even) {
+  background-color: rgba(250, 248, 245, 0.5);
+}
+
+.falsification-table tr:last-child td {
+  border-bottom: none;
+}
+
+.hypo-id {
+  font-family: monospace;
+  font-weight: 700;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+.metric-tag {
+  font-family: monospace;
+  font-size: 0.78rem;
+  background: rgba(30, 90, 117, 0.08);
+  color: var(--color-secondary);
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+
+/* Theory to Production Bridge */
+.bridge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.bridge-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.bridge-primitive {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.bridge-target {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+}
+
+.bridge-arrow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0.5rem 0 1rem 0;
+}
+
+/* ==========================================================================
+   PRINT OPTIMIZATION ENGINE (@media print)
+   Generates a clean, publication-ready academic white-paper
+   ========================================================================== */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 1.5cm;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+    font-size: 10.5pt !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Suppress non-printable elements */
+  header,
+  footer,
+  .site-nav,
+  .btn-academic-print,
+  .scenario-bar,
+  .btn,
+  .region-selector-container,
+  noscript,
+  .scroll-shadow {
+    display: none !important;
+  }
+
+  /* Expand containers */
+  .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .research-hero {
+    padding: 0 0 1.5rem 0 !important;
+    border-bottom: 2px solid #000000 !important;
+    background: none !important;
+  }
+
+  .research-title {
+    font-size: 20pt !important;
+    color: #000000 !important;
+  }
+
+  .research-subtitle {
+    font-size: 11pt !important;
+    color: #333333 !important;
+  }
+
+  .research-meta-bar {
+    border-top: 1px solid #ccc !important;
+    padding-top: 0.5rem !important;
+  }
+
+  /* Ensure high-contrast cards */
+  .lineage-card,
+  .contrast-card,
+  .bridge-card,
+  .thesis-box {
+    border: 1px solid #cccccc !important;
+    box-shadow: none !important;
+    page-break-inside: avoid !important;
+    background: #ffffff !important;
+  }
+
+  /* State Machine print representation */
+  .state-machine-widget {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #999999 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid !important;
+  }
+
+  .widget-header {
+    border-bottom: 1px solid #cccccc !important;
+  }
+
+  .widget-title {
+    color: #000000 !important;
+  }
+
+  .state-graph-canvas {
+    background: #f8fafc !important;
+    border: 1px solid #cccccc !important;
+  }
+
+  .decision-gate-panel {
+    background: #f1f5f9 !important;
+    border: 1px solid #cccccc !important;
+    color: #000000 !important;
+  }
+
+  .decision-log-text {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-left: 3px solid #000000 !important;
+  }
+
+  /* Falsification table page break rules */
+  .falsification-table-wrapper {
+    box-shadow: none !important;
+    border: 1px solid #999999 !important;
+    page-break-inside: avoid !important;
+  }
+
+  .falsification-table th {
+    background: #333333 !important;
+    color: #ffffff !important;
+  }
+
+  .falsification-table td {
+    color: #000000 !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+  }
+
+  /* Typography headings page breaks */
+  h1, h2, h3, h4 {
+    page-break-after: avoid !important;
+    color: #000000 !important;
+  }
+
+  .section, .section-alt {
+    padding: 1.5rem 0 !important;
+  }
+}
+
+
 

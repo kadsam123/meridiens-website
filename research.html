@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adaptive Epistemic Intelligence (AEI) | Meridiens Research Lab</title>
+  <meta name="description" content="Foundational research on Adaptive Epistemic Intelligence (AEI), transitioning from output-centric generative AI to stateful epistemic control layers.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <nav class="site-nav">
+        <a href="index.html" class="logo">MERIDIENS</a>
+        <div class="nav-links">
+          <a href="products.html">Solutions</a>
+          <a href="research.html" class="active">Research</a>
+          <a href="services.html">Advisory</a>
+          <a href="about.html">About Lab</a>
+          <a href="contact.html" class="btn-cta">Engage Studio</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ACADEMIC MASTHEAD / HERO -->
+  <section class="research-hero">
+    <div class="container">
+      <span class="research-preheader">MERIDIENS FOUNDATIONAL RESEARCH // R&D DIVISION</span>
+      <h1 class="research-title">Adaptive Epistemic Intelligence (AEI)</h1>
+      <p class="research-subtitle">
+        Transitioning from output-centric generative AI to stateful epistemic control layers in high-consequence decision environments.
+      </p>
+
+      <div class="research-meta-bar">
+        <div class="personnel-group">
+          <div class="personnel-item">
+            <span class="personnel-role">Director of Theory</span>
+            <span class="personnel-name">Abdelaali Mahrouk</span>
+            <div class="personnel-affiliation">Meridiens Research Lab &bull; Cognitive & Epistemic Systems</div>
+          </div>
+          <div class="personnel-item">
+            <span class="personnel-role">Systems & Verification Architecture</span>
+            <span class="personnel-name">Meridiens Systems Group</span>
+            <div class="personnel-affiliation">Applied AI & Corridor Engineering &bull; Montreal, QC</div>
+          </div>
+          <div class="personnel-item">
+            <span class="personnel-role">Institutional Status</span>
+            <span class="personnel-name">Working Thesis & Framework (2026)</span>
+            <div class="personnel-affiliation">Pre-Submission Whitepaper &bull; Lab Codebase v1.2</div>
+          </div>
+        </div>
+
+        <button onclick="window.print()" class="btn-academic-print" title="Print or save as clean whitepaper PDF">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+            <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zm1 2h4v2H6V3zm6 8v2H4v-2h8z"/>
+          </svg>
+          Download Research Thesis (PDF)
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: THE EXECUTIVE THESIS -->
+  <section class="section">
+    <div class="container" style="max-width: 920px;">
+      <span class="section-subtitle">Foundational Problem</span>
+      <h2 style="font-size: 2.1rem; margin-bottom: 1rem;">The Failure of Scalar Probabilistic Confidence</h2>
+      
+      <p style="font-size: 1.05rem; line-height: 1.7; color: var(--color-text); margin-bottom: 1.5rem;">
+        Modern generative language models evaluate epistemic validity through token probability likelihoods or post-hoc scalar confidence metrics: $P(\text{valid} \mid x) \in [0, 1]$. In low-stakes conversational applications, this scalar abstraction is sufficient. However, in <strong>high-consequence regulatory, international trade, and structural engineering environments</strong>, scalar confidence fails fundamentally.
+      </p>
+
+      <div class="thesis-grid">
+        <div class="contrast-card flaw">
+          <div class="contrast-title" style="color: #dc2626;">
+            <span>✕</span> Output-Centric Generative AI (Flaw)
+          </div>
+          <p style="font-size: 0.9rem; color: #4b5563; line-height: 1.6; margin-bottom: 0.75rem;">
+            <strong>Scalar Confidence Conflation:</strong> Collapses absence of evidence, contradictory statutory evidence, and aleatoric noise into a single numerical score.
+          </p>
+          <ul style="font-size: 0.85rem; color: #4b5563; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
+            <li>Sycophantic alignment with user presuppositions</li>
+            <li>Silent hallucinations on out-of-distribution queries</li>
+            <li>Inability to represent active statutory conflict (Consensus &ne; Truth)</li>
+          </ul>
+        </div>
+
+        <div class="contrast-card solution">
+          <div class="contrast-title" style="color: #059669;">
+            <span>✓</span> Stateful Epistemic Control (AEI)
+          </div>
+          <p style="font-size: 0.9rem; color: #4b5563; line-height: 1.6; margin-bottom: 0.75rem;">
+            <strong>Multidimensional Epistemic State:</strong> Replaces scalar probabilities with a discrete, verifiable control tuple tracked across time.
+          </p>
+          <ul style="font-size: 0.85rem; color: #4b5563; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
+            <li>Explicit <code>EPISTEMIC_SILENCE</code> boundary gates</li>
+            <li>Dialectical tension detection between competing statutes</li>
+            <li>Provable audit trail before generating binding legal affidavits</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="thesis-box">
+        <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--color-primary); font-family: var(--font-heading);">
+          The Epistemic State Tuple Formulation
+        </h3>
+        <p style="font-size: 0.95rem; color: #374151; line-height: 1.6; margin-bottom: 0.75rem;">
+          In Adaptive Epistemic Intelligence, any proposition or regulatory calculation $\psi$ is governed by a state vector $\mathbf{E}(\psi, t)$:
+        </p>
+        <div class="formula-block">
+          E(&psi;, t) = &lang; s, &Delta;FD, &Delta;&sup2;FD, DT, &tau;, &Phi; &rang;
+        </div>
+        <p style="font-size: 0.88rem; color: #4b5563; line-height: 1.6; margin-bottom: 0;">
+          Where <code>s &in; S</code> represents the discrete operational state, <code>&Delta;FD</code> is the Fringe Divergence derivative against validated canons, <code>DT &in; [0, 1]</code> is the Dialectical Tension (degree of unresolvable statutory contradiction), <code>&tau;</code> is the temporal validity horizon, and <code>&Phi;</code> is the cryptographically pinned provenance chain.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: PEER-REVIEWED SCIENTIFIC LINEAGE -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Academic Pedigree</span>
+        <h2 class="section-title">Peer-Reviewed Scientific Lineage</h2>
+        <p style="color: var(--color-text-muted); max-width: 750px; margin: 0 auto; font-size: 1rem;">
+          The theoretical mechanics of AEI originate from foundational peer-reviewed research in cognitive architectures, formal symbolic feedback, and the mathematical boundaries of machine interpretability.
+        </p>
+      </div>
+
+      <div class="lineage-grid">
+        <!-- Paper 1 -->
+        <article class="lineage-card">
+          <span class="publication-badge badge-frontiers">Frontiers in Robotics and AI (2025)</span>
+          <h3 class="lineage-title">Symbolic Feedback for Transparent Fault Anticipation in Neuroergonomic Interfaces</h3>
+          <p class="lineage-desc">
+            Establishes the mathematical framework for pre-failure state detection. Demonstrates that cognitive and symbolic feedback loops can preemptively signal operational boundary breakdown before catastrophe occurs, laying the groundwork for our proactive epistemic gatekeeper.
+          </p>
+          <div class="lineage-footer">
+            <span>Mahrouk et al. &bull; Nov 2025</span>
+            <span style="font-family: monospace; font-weight: 600;">Peer-Reviewed</span>
+          </div>
+        </article>
+
+        <!-- Paper 2 -->
+        <article class="lineage-card">
+          <span class="publication-badge badge-frontiers">Frontiers in Artificial Intelligence (2025)</span>
+          <h3 class="lineage-title">Epistemic Limits of Local Interpretability in Self-Modulating Cognitive Architectures</h3>
+          <p class="lineage-desc">
+            Proves that local, post-hoc explainability methods (e.g. SHAP, LIME) are mathematically incapable of providing reliable auditability in multi-agent recurrent systems. Concludes that cognitive systems must maintain explicit, stateful epistemic registers to guarantee verifiability.
+          </p>
+          <div class="lineage-footer">
+            <span>Mahrouk et al. &bull; Dec 2025</span>
+            <span style="font-family: monospace; font-weight: 600;">Peer-Reviewed</span>
+          </div>
+        </article>
+
+        <!-- Paper 3 -->
+        <article class="lineage-card">
+          <span class="publication-badge badge-thesis">Meridiens Working Monograph (2026)</span>
+          <h3 class="lineage-title">Adaptive Epistemic Intelligence: Stateful Epistemic Control Layers</h3>
+          <p class="lineage-desc">
+            The core theoretical blueprint translating cognitive epistemic limits into production software architectures. Formalizes the 10-layer validation pipeline, deterministic contradiction arbitration, and the zero-retention Bring Your Own Key (BYOK) paradigm.
+          </p>
+          <div class="lineage-footer">
+            <span>A. Mahrouk &bull; Research Lab Monograph</span>
+            <span style="font-family: monospace; font-weight: 600;">Core Specification</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: INTERACTIVE EPISTEMIC STATE MACHINE WIDGET -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">State Engine Architecture</span>
+        <h2 class="section-title">Interactive Epistemic State Machine</h2>
+        <p style="color: var(--color-text-muted); max-width: 750px; margin: 0 auto; font-size: 1rem;">
+          Test how the AEI stateful engine dynamically evaluates legal claims, statutory tension, and epistemic boundaries in real time.
+        </p>
+      </div>
+
+      <div class="state-machine-widget" id="aei-engine">
+        <div class="widget-header">
+          <div>
+            <div class="widget-title">
+              <span style="display:inline-block; width:10px; height:10px; background:#10b981; border-radius:50%; box-shadow:0 0 8px #10b981;"></span>
+              AEI Dynamic State Transition Engine (v1.2)
+            </div>
+            <span style="font-size:0.8rem; color:#94a3b8;">Deterministic Control Substrate for Regulatory Reasoning</span>
+          </div>
+          <div class="widget-status-pill" id="engine-status-text">ENGINE ACTIVE &bull; ZERO HALLUCINATION MODE</div>
+        </div>
+
+        <!-- Scenario Selector Buttons -->
+        <div class="scenario-bar">
+          <button class="scenario-btn active" data-scenario="corroborated" id="btn-scen-1">
+            <strong>Scenario 1: Corroborated Trade Canon</strong><br>
+            <span style="font-size:0.75rem; opacity:0.8;">Harmonized Tariff 7208.51 + Certificate of Origin</span>
+          </button>
+          <button class="scenario-btn" data-scenario="contradiction" id="btn-scen-2">
+            <strong>Scenario 2: Contradictory Directives</strong><br>
+            <span style="font-size:0.75rem; opacity:0.8;">Section 338 Surtax vs. USMCA Chapter 4 Exemption</span>
+          </button>
+          <button class="scenario-btn" data-scenario="silence" id="btn-scen-3">
+            <strong>Scenario 3: Unmapped Boundary Query</strong><br>
+            <span style="font-size:0.75rem; opacity:0.8;">Out-of-Distribution Hybrid Commodity Classification</span>
+          </button>
+        </div>
+
+        <!-- SVG State Graph Visualization -->
+        <div class="state-graph-canvas">
+          <svg class="state-svg" viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
+            <!-- Connecting Transition Lines -->
+            <path id="link-hypo-supp" class="state-link" d="M 120 120 L 260 120" />
+            <path id="link-supp-stable" class="state-link" d="M 320 120 L 480 60" />
+            <path id="link-supp-contested" class="state-link" d="M 320 120 L 480 180" />
+            <path id="link-hypo-silence" class="state-link" d="M 90 150 Q 200 220 670 180" />
+            <path id="link-stable-obsolete" class="state-link" d="M 540 60 L 670 60" />
+
+            <!-- State Node 1: HYPOTHETICAL -->
+            <g class="state-node" id="node-hypothetical" transform="translate(90, 120)">
+              <circle r="30" fill="#1e293b" stroke="#3b82f6" stroke-width="2" />
+              <text y="4">HYPO</text>
+              <text y="46" font-size="9" fill="#94a3b8">Ingestion</text>
+            </g>
+
+            <!-- State Node 2: SUPPORTED -->
+            <g class="state-node" id="node-supported" transform="translate(290, 120)">
+              <circle r="30" fill="#1e293b" stroke="#06b6d4" stroke-width="2" />
+              <text y="4">SUPP</text>
+              <text y="46" font-size="9" fill="#94a3b8">Evidence OK</text>
+            </g>
+
+            <!-- State Node 3: STABLE (Terminal Valid) -->
+            <g class="state-node" id="node-stable" transform="translate(510, 60)">
+              <circle r="30" fill="#1e293b" stroke="#10b981" stroke-width="2" />
+              <text y="4">STABLE</text>
+              <text y="46" font-size="9" fill="#94a3b8">Canon Valid</text>
+            </g>
+
+            <!-- State Node 4: CONTESTED (Dialectical Tension) -->
+            <g class="state-node" id="node-contested" transform="translate(510, 180)">
+              <circle r="30" fill="#1e293b" stroke="#f59e0b" stroke-width="2" />
+              <text y="4">CONTEST</text>
+              <text y="46" font-size="9" fill="#94a3b8">Dialectical</text>
+            </g>
+
+            <!-- State Node 5: EPISTEMIC_SILENCE (Abstention Gate) -->
+            <g class="state-node" id="node-silence" transform="translate(700, 180)">
+              <circle r="30" fill="#1e293b" stroke="#64748b" stroke-width="2" />
+              <text y="4">SILENCE</text>
+              <text y="46" font-size="9" fill="#94a3b8">Boundary Stop</text>
+            </g>
+
+            <!-- State Node 6: OBSOLETE (Temporal Decay) -->
+            <g class="state-node" id="node-obsolete" transform="translate(700, 60)">
+              <circle r="26" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="3 3" />
+              <text y="4" font-size="9">OBSOLETE</text>
+              <text y="42" font-size="9" fill="#64748b">&tau; Expired</text>
+            </g>
+          </svg>
+        </div>
+
+        <!-- Live Decision Gate Readout -->
+        <div class="decision-gate-panel">
+          <div class="decision-meta">
+            <div>
+              <span style="color:#94a3b8; font-size:0.75rem; text-transform:uppercase;">Active Gate Action:</span>
+              <div id="gate-action-badge" class="decision-action-badge action-proceed">
+                <span>●</span> PROCEED &bull; FORMAL AFFIDAVIT AUTHORIZED
+              </div>
+            </div>
+            <div style="font-family:monospace; font-size:0.8rem; color:#38bdf8;" id="telemetry-readout">
+              DT: 0.02 | &Delta;FD: 0.00 | Horizon: VALID | Entropy: 0.04 nats
+            </div>
+          </div>
+          <div class="decision-log-text" id="decision-log-content">
+            [AEI-TRACE::0x7F4B]: Proposition validated against USMCA Annex 4-B rules of origin. Dual independent source corroboration complete (CBSA D11-4-14 + US Customs Binding Ruling). Dialectical tension below arbitration threshold. Committing validated proposition to epistemic ledger v1.2.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: FORMAL RESEARCH HYPOTHESES & FALSIFICATION MATRIX -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Empirical Rigor</span>
+        <h2 class="section-title">Formal Hypotheses & Falsification Matrix</h2>
+        <p style="color: var(--color-text-muted); max-width: 750px; margin: 0 auto; font-size: 1rem;">
+          To distinguish AEI from non-falsifiable marketing narratives, each component is bound to explicit mathematical operationalizations and strict falsification criteria.
+        </p>
+      </div>
+
+      <div class="falsification-table-wrapper">
+        <table class="falsification-table">
+          <thead>
+            <tr>
+              <th style="width: 12%;">Hypothesis</th>
+              <th style="width: 25%;">Theoretical Principle</th>
+              <th style="width: 23%;">Primary Metric & Target</th>
+              <th style="width: 25%;">Empirical Operationalization</th>
+              <th style="width: 15%;">Falsification Condition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="hypo-id">H1: State Vector</td>
+              <td>
+                <strong>Multidimensional Representation</strong><br>
+                A discrete epistemic state tuple captures reliability better than scalar probability values.
+              </td>
+              <td>
+                <span class="metric-tag">AUARC &gt; +18.4%</span><br>
+                <span class="metric-tag">ECE &lt; 0.04</span>
+              </td>
+              <td>Area Under the Accuracy-Rejection Curve measured against HTSUS regulatory classification datasets.</td>
+              <td>Scalar softmax confidence achieves parity in selective risk classification.</td>
+            </tr>
+            <tr>
+              <td class="hypo-id">H2: State Bounding</td>
+              <td>
+                <strong>Deterministic Transition Latency</strong><br>
+                Epistemic state transitions operate within predictable real-time boundaries without infinite loops.
+              </td>
+              <td>
+                <span class="metric-tag">Latency &le; 45ms</span><br>
+                <span class="metric-tag">FTR &lt; 10&minus;&sup5;</span>
+              </td>
+              <td>State graph transitions measured across 10,000 synthetic manifests under maximum CPU load.</td>
+              <td>Transition latency exceeds 100ms or non-deterministic state skipping occurs.</td>
+            </tr>
+            <tr>
+              <td class="hypo-id">H3: Contradiction</td>
+              <td>
+                <strong>Dialectical Tension Detection</strong><br>
+                Explicit contradiction scoring halts generation when legal canons conflict (e.g. Section 338 vs 232).
+              </td>
+              <td>
+                <span class="metric-tag">FCR Reduction &gt; 84%</span><br>
+                <span class="metric-tag">F1_Conflict &gt; 0.91</span>
+              </td>
+              <td>False Consensus Rate (FCR) evaluated on diametrically opposed trade edicts.</td>
+              <td>Agent hallucinates a blended, sycophantic resolution without halting for arbitration.</td>
+            </tr>
+            <tr>
+              <td class="hypo-id">H4: Epistemic Silence</td>
+              <td>
+                <strong>Principled Abstention Gate</strong><br>
+                When an input falls outside corroborated boundaries, the model abstains rather than extrapolating.
+              </td>
+              <td>
+                <span class="metric-tag">FDR &rarr; 0.00</span><br>
+                <span class="metric-tag">Selective F1 &gt; 0.94</span>
+              </td>
+              <td>False Discovery Rate evaluated on out-of-distribution novel commodities and unmapped codes.</td>
+              <td>Model emits high-confidence hallucinated HS classifications under zero source support.</td>
+            </tr>
+            <tr>
+              <td class="hypo-id">H5: Active Inquiry</td>
+              <td>
+                <strong>Targeted Uncertainty Reduction</strong><br>
+                In the silence state, generated inquiries maximize information gain per question requested.
+              </td>
+              <td>
+                <span class="metric-tag">IG/Token &gt; 0.72 bits</span><br>
+                <span class="metric-tag">Turn-to-Resolution &le; 2</span>
+              </td>
+              <td>Information Gain (KL divergence reduction) per clarification token sent to human operator.</td>
+              <td>Inquiry questions fail to reduce hypothesis entropy more effectively than random prompt probes.</td>
+            </tr>
+            <tr>
+              <td class="hypo-id">H6: Heterogeneous</td>
+              <td>
+                <strong>Correlated-Error Resistance</strong><br>
+                Stateful epistemic validation prevents correlated catastrophic failures across multi-agent swarms.
+              </td>
+              <td>
+                <span class="metric-tag">Resist &gt; 3.8&times;</span><br>
+                <span class="metric-tag">Cascade Rate &lt; 1.2%</span>
+              </td>
+              <td>Failure cascade rate measured across 7-agent pipelines sharing a common base LLM backbone.</td>
+              <td>Upstream hallucination propagates through downstream agents without being flagged by the state layer.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: THE BRIDGE: THEORY TO PRODUCTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Commercial Realization</span>
+        <h2 class="section-title">The Bridge: Theory to Production</h2>
+        <p style="color: var(--color-text-muted); max-width: 750px; margin: 0 auto; font-size: 1rem;">
+          How our foundational mathematical models translate into our operational commercial software suite.
+        </p>
+      </div>
+
+      <div class="bridge-grid">
+        <!-- Bridge 1 -->
+        <div class="bridge-card">
+          <span class="bridge-primitive">AEI Primitive 1: Epistemic Silence</span>
+          <h3 class="bridge-target">Deterministic Building Code Compliance (BIM/IFC)</h3>
+          <div class="bridge-arrow">
+            <span>&rarr; In Production at Meridiens Architecture Group</span>
+          </div>
+          <p style="font-size: 0.9rem; color: #4b5563; line-height: 1.6; flex-grow: 1;">
+            Solves the catastrophic liability risk of generative AI in structural engineering. When 3D building information models or fire-safety geometries fall outside verified statutory specifications, the engine triggers <code>EPISTEMIC_SILENCE</code> and generates targeted human-in-the-loop review queries rather than guessing compliance.
+          </p>
+        </div>
+
+        <!-- Bridge 2 -->
+        <div class="bridge-card">
+          <span class="bridge-primitive">AEI Primitive 2: Contradiction Dynamics</span>
+          <h3 class="bridge-target">Section 338 vs. Section 232 Tariff Shield (Meridian)</h3>
+          <div class="bridge-arrow">
+            <span>&rarr; In Production at flow.meridiens.co</span>
+          </div>
+          <p style="font-size: 0.9rem; color: #4b5563; line-height: 1.6; flex-grow: 1;">
+            Commercial manifests entering the USMCA corridor encounter mutually conflicting executive edicts. The contradiction arbitration engine calculates Dialectical Tension (DT) in real time, isolating tariff vulnerabilities and automatically formatting Section 232 exemption affidavits.
+          </p>
+        </div>
+
+        <!-- Bridge 3 -->
+        <div class="bridge-card">
+          <span class="bridge-primitive">AEI Primitive 3: Pinned State Ledger</span>
+          <h3 class="bridge-target">Multi-Agent Corridor Routing & USDC Escrow (AtlasCorr AI)</h3>
+          <div class="bridge-arrow">
+            <span>&rarr; In Production at atlas-corr.meridiens.co</span>
+          </div>
+          <p style="font-size: 0.9rem; color: #4b5563; line-height: 1.6; flex-grow: 1;">
+            Powers our decentralized Agent-to-Agent (A2A) micro-economy. Pinned cryptographic provenance chains verify that logistics blueprints are in a <code>STABLE</code> epistemic state before triggering automated Circle USDC payment release across Base Sepolia smart contracts.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-main">MERIDIENS</span>
+            <span class="logo-sub">Global BI & Applied AI</span>
+          </a>
+          <p class="footer-about">
+            Public-facing brand of <strong>18138711 CANADA INC.</strong>, a federally registered Canadian consulting company in Montreal delivering data engineering and AI automation solutions.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Solutions</a></li>
+            <li><a href="research.html">Research & AEI</a></li>
+            <li><a href="services.html">Advisory</a></li>
+            <li><a href="about.html">About Lab</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Global Reach</h4>
+          <div class="footer-corridors">
+            <p><strong>Dynamic Corridors:</strong> On-demand corridor routing, customs auditing, and supply chain mapping across any trade route worldwide.</p>
+            <p style="margin-top: 10px;">HQ: Montreal, QC, Canada &bull; <a href="mailto:info@meridiens.co" style="color: var(--color-accent);">info@meridiens.co</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 18138711 CANADA INC. All rights reserved. Operating under brand Meridiens.</p>
+        <p>Federal Registration Number: 18138711 (Canada)</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT: INTERACTIVE EPISTEMIC STATE MACHINE ENGINE -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const scenarios = {
+        corroborated: {
+          activeNodes: ['node-hypothetical', 'node-supported', 'node-stable'],
+          activeLinks: ['link-hypo-supp', 'link-supp-stable'],
+          terminalNode: 'node-stable',
+          badgeClass: 'action-proceed',
+          badgeText: '● PROCEED • FORMAL AFFIDAVIT AUTHORIZED',
+          telemetry: 'DT: 0.02 | ΔFD: 0.00 | Horizon: VALID | Entropy: 0.04 nats',
+          log: '[AEI-TRACE::0x7F4B]: Proposition validated against USMCA Annex 4-B rules of origin. Dual independent source corroboration complete (CBSA D11-4-14 + US Customs Binding Ruling). Dialectical tension below arbitration threshold. Committing validated proposition to epistemic ledger v1.2.'
+        },
+        contradiction: {
+          activeNodes: ['node-hypothetical', 'node-supported', 'node-contested'],
+          activeLinks: ['link-hypo-supp', 'link-supp-contested'],
+          terminalNode: 'node-contested',
+          badgeClass: 'action-halt',
+          badgeText: '▲ HALT & ARBITRATE • CONTRADICTORY DIRECTIVES',
+          telemetry: 'DT: 0.89 | ΔFD: +0.41 | Tension: CRITICAL | Entropy: 0.92 nats',
+          log: '[AEI-ALERT::0x992C]: Dialectical contradiction detected. Proposition satisfies USMCA preferential zero-duty criteria but triggers Section 338 emergency steel surtax (Presidential Proclamation 10872). Automated declaration generation blocked. Routing to Section 232 exclusion dialectic queue.'
+        },
+        silence: {
+          activeNodes: ['node-hypothetical', 'node-silence'],
+          activeLinks: ['link-hypo-silence'],
+          terminalNode: 'node-silence',
+          badgeClass: 'action-silence',
+          badgeText: '◼ EPISTEMIC SILENCE • HUMAN OPERATOR REQUIRED',
+          telemetry: 'Coverage: 0.12 | ΔFD: +0.88 | Confidence: ABSTAIN | Entropy: 1.48 nats',
+          log: '[AEI-BOUNDARY::0x01AA]: Epistemic silence gate triggered. Input parameters fall outside the boundary of verified tariff classifications. Rejection of uncorroborated inference active to prevent catastrophic hallucination. Generating targeted active inquiry vector for licensed customs broker review.'
+        }
+      };
+
+      const buttons = document.querySelectorAll('.scenario-btn');
+      const allNodes = document.querySelectorAll('.state-node');
+      const allLinks = document.querySelectorAll('.state-link');
+      const actionBadge = document.getElementById('gate-action-badge');
+      const telemetryEl = document.getElementById('telemetry-readout');
+      const logEl = document.getElementById('decision-log-content');
+
+      function applyScenario(scenKey) {
+        const scen = scenarios[scenKey];
+        if (!scen) return;
+
+        // Reset nodes & links
+        allNodes.forEach(n => n.classList.remove('active'));
+        allLinks.forEach(l => l.classList.remove('active-link'));
+
+        // Highlight active nodes
+        scen.activeNodes.forEach(nId => {
+          const el = document.getElementById(nId);
+          if (el) el.classList.add('active');
+        });
+
+        // Highlight active links
+        scen.activeLinks.forEach(lId => {
+          const el = document.getElementById(lId);
+          if (el) el.classList.add('active-link');
+        });
+
+        // Update badge
+        actionBadge.className = 'decision-action-badge ' + scen.badgeClass;
+        actionBadge.innerHTML = scen.badgeText;
+
+        // Update telemetry & log
+        telemetryEl.innerHTML = scen.telemetry;
+        logEl.innerHTML = scen.log;
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const scenKey = btn.getAttribute('data-scenario');
+          applyScenario(scenKey);
+        });
+      });
+
+      // Initial state
+      applyScenario('corroborated');
+    });
+  </script>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
